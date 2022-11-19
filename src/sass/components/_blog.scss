@@ -1,0 +1,136 @@
+
+// body {
+//     font-family: "Roboto", sans-serif;
+//     background-color: var(--main-white-color);
+//     color: var (var(--main-title-color));
+//   }
+
+//   .list {
+//     list-style: none;
+//   }
+//   .link {
+//     text-decoration: none;
+//   }
+
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    background-color: #01383A;
+    ;
+  }
+  
+//   .container {
+//     width: 1200px;
+//     padding-left: 15px;
+//     padding-right: 15px;
+  
+//     margin: 0 auto;
+//   }
+
+
+.blog {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/blog/blog-mob-background-1x-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+ 
+  .blog{
+    display:flex;
+    flex-direction: column;
+
+  }
+  .blog{
+   
+   border: 1px solid #28780D; 
+  }
+  
+  .blog-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    text-align: left;
+    // letter-spacing: 0.03em;
+    margin-top: 40px;
+    margin-bottom:31px;
+    color: #ffffff;
+   
+  }
+
+  .photo{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    text-align: left;
+    // letter-spacing: 0.03em;
+   
+    color: #ffffff;
+  }
+  .blog-list {
+    list-style: none;
+  }
+  .cards {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   margin-top:40px;
+
+  }
+  .cards-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    text-align: left;
+    // letter-spacing: 0.03em;
+   
+    color: #ffffff;
+    margin-bottom:16px;
+
+  }
+  
+  .blog-article {
+    display:flex;
+    flex-direction: column;
+  }
+  .blog-author {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    
+    // letter-spacing: 0.03em;
+   margin-top:8px;
+    color: #ffffff;
+  }
+  .blog-updates {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    text-align: left;
+    // letter-spacing: 0.03em;
+  margin-top:8px;
+    
+    color:#8D9289;
+  }
+  .blog-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: left;  
+    margin-top:8px;
+    color: #ffffff;
+  }
+  .blog-moreinfo-link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    text-align: right;  
+    margin-top:8px;
+    color: #86E543;
+  }
