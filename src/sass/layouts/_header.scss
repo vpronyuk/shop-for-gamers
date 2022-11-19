@@ -1,0 +1,25 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 24px 16px;
+  background-color: #01383a;
+  box-shadow: 0px 4px 10px rgba(97, 162, 58, 0.2),
+    0px 4px 50px rgba(94, 236, 54, 0.5), 0px 4px 4px rgba(17, 168, 26, 0.2);
+}
+.logo {
+  display: inline-block;
+  max-width: 120px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
+  color: #ffffff;
+}
+.menu-open-btn {
+  background-color: transparent;
+  border: none;
+  fill: #86e543;
+}
