@@ -1,0 +1,74 @@
+.header-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: #86e543;
+  cursor: pointer;
+  border-color: transparent;
+  border-radius: 16px;
+  min-width: 102px;
+  height: 46px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  color: var(--black-color-text);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+      0px 4px 10px rgba(255, 255, 255, 0.1);
+  }
+}
+
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: #86e543;
+  cursor: pointer;
+  border-color: transparent;
+  border-radius: 16px;
+  min-width: 173px;
+  height: 51px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+      0px 4px 10px rgba(255, 255, 255, 0.1);
+  }
+}
+
+.viewall-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border-color: transparent;
+  border-radius: 16px;
+  min-width: 153px;
+  height: 51px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+  color: #01383a;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5),
+      0px 4px 10px rgba(134, 229, 67, 0.1);
+  }
+}
