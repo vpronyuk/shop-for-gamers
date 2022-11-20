@@ -1,0 +1,95 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 20, 20, 0.8);
+  border: 1px solid #000000;
+  transition: opacity var(--transit-duration) var(--transit-timing),
+    visibility var(--transit-duration) var(--transit-timing);
+}
+
+.modal {
+  @media screen and (min-width: 320px) {
+    width: 272px;
+    height: 367px;
+  }
+
+  @include tablet {
+    width: 688px;
+    height: 500px;
+  }
+  @include desktop {
+    width: 768px;
+    height: 527px;
+  }
+  height: 367px;
+  background-color: var(--dark-green-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform var(--transit-duration) var(--transit-timing);
+  padding: 100px 44px;
+  text-align: center;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.modal-close-btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--dark-green-color);
+  border: 1.5px solid var(--light-green-color);
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  transition: fill var(--transit-duration) var(--transit-timing);
+}
+
+.icon-circle-close {
+  fill: var(--light-green-color);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.confirm-btn {
+  width: 173px;
+  height: 51px;
+  background: var(--light-green-color);
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--dark-green-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  border-color: transparent;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.modal-text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--white-color-text);
+  margin-bottom: 32px;
+}
