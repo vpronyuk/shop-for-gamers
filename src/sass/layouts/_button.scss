@@ -1,19 +1,27 @@
-.header-btn {
+// General buttons parameters. Add to all buttons
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5px;
-  background-color: #86e543;
   cursor: pointer;
-  border: none;
   border-radius: 16px;
-  min-width: 102px;
-  height: 46px;
 
   font-family: inherit;
   font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.header-btn {
+  background-color: #86e543;
+  border: none;
+  min-width: 95px;
+  height: 40px;
+
   font-size: 14px;
-  line-height: 100%;
+  line-height: 1.57;
+  letter-spacing: -0.03em;
   color: #000000;
 
   &:hover,
@@ -21,49 +29,43 @@
     box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
       0px 4px 10px rgba(255, 255, 255, 0.1);
   }
+
+  @include desktop {
+    min-width: 102px;
+    height: 46px;
+    line-height: 1;
+  }
 }
 
-.hero-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-  background-color: #86e543;
-  cursor: pointer;
+// Button for "Start shopping" / "Buy it now" / Modals
+.big-gn-btn {
   border: none;
-  border-radius: 16px;
   min-width: 173px;
   height: 51px;
 
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.19;
+  background-color: #86e543;
   text-transform: uppercase;
+  color: #01383a;
 
   &:hover,
   &:focus {
     box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
       0px 4px 10px rgba(255, 255, 255, 0.1);
   }
+
+  @include tablet {
+    min-width: 306px;
+    height: 70px;
+    font-size: 32px;
+  }
 }
 
-.viewall-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-  cursor: pointer;
+.view-btn {
   background-color: #ffffff;
   border: none;
-  border-radius: 16px;
   min-width: 153px;
   height: 51px;
 
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.19;
   color: #01383a;
 
   &:hover,
@@ -71,23 +73,21 @@
     box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5),
       0px 4px 10px rgba(134, 229, 67, 0.1);
   }
+
+  @include tablet {
+    min-width: 195px;
+    height: 65px;
+    font-size: 28px;
+    line-height: 1.18;
+  }
 }
 
 .filter-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
   min-width: 124px;
   height: 35px;
   border: 1px solid #86e543;
   background-color: transparent;
-  border-radius: 16px;
 
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.19;
   color: #86e543;
 
   &:hover,
@@ -96,48 +96,23 @@
     box-shadow: 0px 4px 4px rgba(134, 229, 67, 0.2);
     color: #01383a;
   }
-}
 
-.buyit-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 173px;
-  height: 51px;
-  background-color: #86e543;
-  border-radius: 16px;
-  cursor: pointer;
+  @include tablet {
+    min-width: 132px;
+    height: 51px;
+  }
 
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.19;
-  text-transform: uppercase;
-  color: #01383a;
-
-  &:hover,
-  &:focus {
-    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
-      0px 4px 10px rgba(255, 255, 255, 0.1);
+  @include desktop {
+    min-width: 168px;
   }
 }
 
 .addcard-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
   min-width: 173px;
   height: 51px;
   background-color: transparent;
   border: 1px solid #86e543;
-  border-radius: 16px;
-  cursor: pointer;
 
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.19;
   text-transform: uppercase;
   color: #86e543;
 
@@ -146,23 +121,20 @@
     filter: drop-shadow(0px 4px 10px rgba(134, 229, 67, 0.1))
       drop-shadow(0px 4px 20px rgba(134, 229, 67, 0.4));
   }
+
+  @include tablet {
+    min-width: 306px;
+    height: 70px;
+    font-size: 32px;
+  }
 }
 
 .send-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
   min-width: 173px;
   height: 51px;
   background-color: transparent;
   border: 1px solid #ffffff;
-  border-radius: 16px;
 
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.19;
   text-transform: uppercase;
   color: #ffffff;
 
@@ -171,28 +143,10 @@
     filter: drop-shadow(0px 4px 10px rgba(255, 255, 255, 0.1))
       drop-shadow(0px 4px 20px rgba(255, 255, 255, 0.4));
   }
-}
 
-.letsgo-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-  min-width: 173px;
-  height: 51px;
-  background-color: #86e543;
-  border-radius: 16px;
-
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 1.19;
-  text-transform: uppercase;
-  color: #01383a;
-
-  &:hover,
-  &:focus {
-    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
-      0px 4px 10px rgba(255, 255, 255, 0.1);
+  @include tablet {
+    min-width: 306px;
+    height: 70px;
+    font-size: 32px;
   }
 }
