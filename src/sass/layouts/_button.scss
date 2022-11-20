@@ -14,7 +14,7 @@
 }
 
 .header-btn {
-  background-color: #86e543;
+  background-color: var(--light-green-color);
   border: none;
   min-width: 95px;
   height: 40px;
@@ -22,7 +22,9 @@
   font-size: 14px;
   line-height: 1.57;
   letter-spacing: -0.03em;
-  color: #000000;
+  color: var(--black-color-text);
+
+  transition: box-shadow var(--transit-duration) var(--transit-timing);
 
   &:hover,
   &:focus {
@@ -43,9 +45,11 @@
   min-width: 173px;
   height: 51px;
 
-  background-color: #86e543;
+  background-color: var(--light-green-color);
   text-transform: uppercase;
-  color: #01383a;
+  color: var(--dark-green-color);
+
+  transition: box-shadow var(--transit-duration) var(--transit-timing);
 
   &:hover,
   &:focus {
@@ -61,12 +65,14 @@
 }
 
 .view-btn {
-  background-color: #ffffff;
+  background-color: var(--white-color-text);
   border: none;
   min-width: 153px;
   height: 51px;
 
-  color: #01383a;
+  color: var(--dark-green-color);
+
+  transition: box-shadow var(--transit-duration) var(--transit-timing);
 
   &:hover,
   &:focus {
@@ -85,10 +91,14 @@
 .filter-btn {
   min-width: 124px;
   height: 35px;
-  border: 1px solid #86e543;
+  border: 1px solid var(--light-green-color);
   background-color: transparent;
 
-  color: #86e543;
+  color: var(--light-green-color);
+
+  transition: filter var(--transit-duration) var(--transit-timing);
+  transition: box-shadow, background-color,
+    color var(--transit-duration) var(--transit-timing);
 
   &:hover,
   &:focus {
@@ -96,8 +106,8 @@
       drop-shadow(0px 4px 20px rgba(134, 229, 67, 0.4));
   }
   &:active {
-    background: #86e543;
-    color: #01383a;
+    background-color: var(--light-green-color);
+    color: var(--dark-green-color);
     box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1),
       0px 4px 20px rgba(134, 229, 67, 0.4);
   }
@@ -116,10 +126,12 @@
   min-width: 173px;
   height: 51px;
   background-color: transparent;
-  border: 1px solid #86e543;
+  border: 1px solid var(--light-green-color);
 
   text-transform: uppercase;
-  color: #86e543;
+  color: var(--light-green-color);
+
+  transition: filter var(--transit-duration) var(--transit-timing);
 
   &:hover,
   &focus {
@@ -138,10 +150,12 @@
   min-width: 173px;
   height: 51px;
   background-color: transparent;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--white-color-text);
 
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color-text);
+
+  transition: filter var(--transit-duration) var(--transit-timing);
 
   &:hover,
   &:focus {
