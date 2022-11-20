@@ -1,0 +1,171 @@
+// General buttons parameters. Add to all buttons
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 16px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.header-btn {
+  background-color: var(--light-green-color);
+  border: none;
+  min-width: 95px;
+  height: 40px;
+
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: -0.03em;
+  color: var(--black-color-text);
+
+  transition: box-shadow var(--transit-duration) var(--transit-timing);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+      0px 4px 10px rgba(255, 255, 255, 0.1);
+  }
+
+  @include desktop {
+    min-width: 102px;
+    height: 46px;
+    line-height: 1;
+  }
+}
+
+// Button for "Start shopping" / "Buy it now" / Modals
+.big-gn-btn {
+  border: none;
+  min-width: 173px;
+  height: 51px;
+
+  background-color: var(--light-green-color);
+  text-transform: uppercase;
+  color: var(--dark-green-color);
+
+  transition: box-shadow var(--transit-duration) var(--transit-timing);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+      0px 4px 10px rgba(255, 255, 255, 0.1);
+  }
+
+  @include tablet {
+    min-width: 306px;
+    height: 70px;
+    font-size: 32px;
+  }
+}
+
+.view-btn {
+  background-color: var(--white-color-text);
+  border: none;
+  min-width: 153px;
+  height: 51px;
+
+  color: var(--dark-green-color);
+
+  transition: box-shadow var(--transit-duration) var(--transit-timing);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5),
+      0px 4px 10px rgba(134, 229, 67, 0.1);
+  }
+
+  @include tablet {
+    min-width: 195px;
+    height: 65px;
+    font-size: 28px;
+    line-height: 1.18;
+  }
+}
+
+.filter-btn {
+  min-width: 124px;
+  height: 35px;
+  border: 1px solid var(--light-green-color);
+  background-color: transparent;
+
+  color: var(--light-green-color);
+
+  transition: filter var(--transit-duration) var(--transit-timing);
+  transition: box-shadow, background-color,
+    color var(--transit-duration) var(--transit-timing);
+
+  &:hover,
+  &:focus {
+    filter: drop-shadow(0px 4px 10px rgba(134, 229, 67, 0.1))
+      drop-shadow(0px 4px 20px rgba(134, 229, 67, 0.4));
+  }
+  &:active {
+    background-color: var(--light-green-color);
+    color: var(--dark-green-color);
+    box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1),
+      0px 4px 20px rgba(134, 229, 67, 0.4);
+  }
+
+  @include tablet {
+    min-width: 132px;
+    height: 51px;
+  }
+
+  @include desktop {
+    min-width: 168px;
+  }
+}
+
+.addcard-btn {
+  min-width: 173px;
+  height: 51px;
+  background-color: transparent;
+  border: 1px solid var(--light-green-color);
+
+  text-transform: uppercase;
+  color: var(--light-green-color);
+
+  transition: filter var(--transit-duration) var(--transit-timing);
+
+  &:hover,
+  &focus {
+    filter: drop-shadow(0px 4px 10px rgba(134, 229, 67, 0.1))
+      drop-shadow(0px 4px 20px rgba(134, 229, 67, 0.4));
+  }
+
+  @include tablet {
+    min-width: 306px;
+    height: 70px;
+    font-size: 32px;
+  }
+}
+
+.send-btn {
+  min-width: 173px;
+  height: 51px;
+  background-color: transparent;
+  border: 1px solid var(--white-color-text);
+
+  text-transform: uppercase;
+  color: var(--white-color-text);
+
+  transition: filter var(--transit-duration) var(--transit-timing);
+
+  &:hover,
+  &:focus {
+    filter: drop-shadow(0px 4px 10px rgba(255, 255, 255, 0.1))
+      drop-shadow(0px 4px 20px rgba(255, 255, 255, 0.4));
+  }
+
+  @include tablet {
+    min-width: 306px;
+    height: 70px;
+    font-size: 32px;
+  }
+}
