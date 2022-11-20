@@ -12,25 +12,24 @@
 .modal {
   @media screen and (min-width: 320px) {
     width: 272px;
-    height: 367px;
   }
 
   @include tablet {
     width: 688px;
-    height: 500px;
+    padding: 100px 70px;
   }
   @include desktop {
     width: 768px;
-    height: 527px;
+    padding: 100px 70px;
   }
-  height: 367px;
+
   background-color: var(--dark-green-color);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transit-duration) var(--transit-timing);
-  padding: 100px 44px;
+  padding: 100px 40px;
   text-align: center;
 }
 
@@ -67,11 +66,24 @@
 
 .confirm-btn {
   width: 173px;
-  height: 51px;
+  @include tablet {
+    width: 306px;
+  }
+  @include desktop {
+    width: 306px;
+  }
+  padding-top: 16px;
+  padding-bottom: 16px;
   background: var(--light-green-color);
   border-radius: 16px;
   font-weight: 700;
   font-size: 16px;
+  @include tablet {
+    font-size: 32px;
+  }
+  @include desktop {
+    font-size: 32px;
+  }
   line-height: 1.19;
   text-align: center;
   text-transform: uppercase;
@@ -84,12 +96,70 @@
   margin: 0 auto;
   cursor: pointer;
 }
-
-.modal-text {
-  font-weight: 600;
+.modal-text-add {
+  @include tablet {
+    font-size: 56px;
+    line-height: 1.18;
+  }
+  @include desktop {
+    font-size: 64px;
+    line-height: 1.17;
+  }
+  font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
   text-align: center;
   color: var(--white-color-text);
   margin-bottom: 32px;
+  @include tablet {
+    margin-bottom: 56px;
+  }
+  @include desktop {
+    margin-bottom: 56px;
+  }
+}
+.modal-text-contact {
+  @include tablet {
+    font-size: 56px;
+    line-height: 1.18;
+  }
+  @include desktop {
+    font-size: 64px;
+    line-height: 1.17;
+  }
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--white-color-text);
+  margin-bottom: 32px;
+  @include tablet {
+    margin-bottom: 80px;
+  }
+  @include desktop {
+    margin-bottom: 80px;
+  }
+}
+
+.modal-text-order {
+  @include tablet {
+    font-size: 56px;
+    line-height: 1.18;
+  }
+  @include desktop {
+    font-size: 64px;
+    line-height: 1.17;
+  }
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--white-color-text);
+  margin-bottom: 20px;
+  @include tablet {
+    margin-bottom: 56px;
+  }
+  @include desktop {
+    margin-bottom: 56px;
+  }
 }
