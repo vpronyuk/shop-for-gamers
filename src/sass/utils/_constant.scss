@@ -1,0 +1,19 @@
+:root {
+  --white-color-text: #ffffff;
+  --black-color-text: #000000;
+  --dark-green-color: #01383a;
+  --light-green-color: #86e543;
+  --grey-color: #8d9289;
+  --light-grey-color: #cdcdcd;
+  --transit-duration: 250ms;
+  --transit-timing: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
