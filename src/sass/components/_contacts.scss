@@ -1,0 +1,140 @@
+.contacts {
+  background-color: rgb(1, 72, 49);
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+
+.contacts-container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+.contacts-title {
+  //   margin-left: 16px;
+  //   margin-bottom: 35px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+
+  color: #ffffff;
+}
+
+.contacts-content {
+  margin-bottom: 34px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+
+  color: #ffffff;
+}
+
+.contacts-list {
+  margin-bottom: 24px;
+}
+
+.contacts-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.contacts-text {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+
+  color: #ffffff;
+}
+
+// .contacts-picture {
+// }
+
+.contacts-list {
+  min-width: 147px;
+}
+
+.contacts-link {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+
+  text-transform: capitalize;
+
+  color: #8d9289;
+}
+
+.contacts-link-tel {
+  margin-bottom: 8px;
+}
+
+.contactsForm-data {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16;
+
+  color: #86e543;
+}
+
+.contactsForm-field:not(:last-child) {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactsForm__input {
+  padding-bottom: 4px;
+  width: 100%;
+  min-height: 24px;
+  background-color: transparent;
+  border: transparent;
+  border-bottom: 1px solid #86e543;
+  &:focus {
+    outline: 1px solid #86e543;
+  }
+}
+
+.contactsForm-field input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  text-transform: capitalize;
+
+  color: #ffffff;
+}
+
+.contactsForm-textarea {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: #cdcdcd;
+}
+
+textarea {
+  margin-top: 4px;
+  margin-bottom: 24px;
+  resize: none;
+  min-height: 95px;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #86e543;
+  //   margin-top: 4px;
+  //
+  //
+  //
+  //   border: 1px solid rgba(33, 33, 33, 0.2);
+  //   border-radius: 4px;
+}
+
+.contacts-btn {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
