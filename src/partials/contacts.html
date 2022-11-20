@@ -21,6 +21,36 @@
       <section class="contacts">
         <div class="container">
           <h1 class="contacts-title">Сontacts</h1>
+          <picture>
+            <source
+              srcset="
+                ./images/contacts/game-set-1x.jpg 1x,
+                ./images/contacts/game-set-2x.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/contacts/game-set-tab-1x.jpg 1x,
+                ./images/contacts/game-set-tab-2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              class="game-set-mob"
+              srcset="
+                ./images/contacts/game-set-mob-1x.jpg 1x,
+                ./images/contacts/game-set-mob-2x.jpg 2x
+              "
+              media="(max-width: 768px)"
+            />
+            <img
+              src="./images/contacts/game-set.jpg"
+              alt="game-set"
+              width="1200"
+            />
+          </picture>
+
           <!-- <picture class="contacts-picture">
             <source
               srcset="
