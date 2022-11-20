@@ -92,9 +92,14 @@
 
   &:hover,
   &:focus {
-    background-color: #86e543;
-    box-shadow: 0px 4px 4px rgba(134, 229, 67, 0.2);
+    filter: drop-shadow(0px 4px 10px rgba(134, 229, 67, 0.1))
+      drop-shadow(0px 4px 20px rgba(134, 229, 67, 0.4));
+  }
+  &:active {
+    background: #86e543;
     color: #01383a;
+    box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1),
+      0px 4px 20px rgba(134, 229, 67, 0.4);
   }
 
   @include tablet {
