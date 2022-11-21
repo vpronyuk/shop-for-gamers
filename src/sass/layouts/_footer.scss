@@ -51,6 +51,7 @@ footer {
   }
 
   @include tablet {
+    margin-bottom: auto;
     margin-right: 61px;
   }
 
@@ -94,6 +95,7 @@ footer {
   }
 
   @include desktop {
+    gap: 16px;
     flex-direction: column;
     justify-content: center;
   }
