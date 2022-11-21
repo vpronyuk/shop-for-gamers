@@ -43,7 +43,7 @@
   height: 40px;
   border-radius: 50%;
   background-color: var(--dark-green-color);
-  border: 1.5px solid var(--light-green-color);
+  border: 1.9px solid var(--light-green-color);
   top: 20px;
   right: 20px;
   display: flex;
@@ -51,11 +51,16 @@
   justify-content: center;
   padding: 0;
   cursor: pointer;
-  // transition: fill var(--transit-duration) var(--transit-timing);
+  transition: background-color var(--transit-duration) var(--transit-timing);
+  &:hover,
+  &:focus {
+    background-color: rgb(6, 97, 65);
+  }
 }
 
 .icon-circle-close {
   fill: var(--light-green-color);
+  padding: 8px;
 }
 
 .is-hidden {
@@ -95,7 +100,13 @@
   border-color: transparent;
   margin: 0 auto;
   cursor: pointer;
+  transition: background-color var(--transit-duration) var(--transit-timing);
+  &:hover,
+  &:focus {
+    background-color: rgb(11, 182, 122);
+  }
 }
+
 .modal-text-add {
   @include tablet {
     font-size: 56px;
