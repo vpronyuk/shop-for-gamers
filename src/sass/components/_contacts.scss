@@ -260,7 +260,30 @@ textarea {
 }
 
 .contacts-btn {
-  display: flex;
   margin-left: auto;
   margin-right: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+
+  @include desktop() {
+    margin-left: 0;
+    font-size: 32px;
+    line-height: 1.19;
+    min-width: 306px;
+    height: 70px;
+  }
+}
+
+.img {
+  @media screen and (max-width: 767px) {
+    width: 100vw;
+    margin-left: -15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    border-radius: 14px;
+  }
 }
