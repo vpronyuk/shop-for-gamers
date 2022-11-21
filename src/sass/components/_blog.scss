@@ -81,6 +81,14 @@
     background-image: url(../images/blog/icon-line-mobile-1.png);
     background-repeat: no-repeat;
     background-size: contain;
+    @media screen and (min-width: 320px) and (max-width: 479px) {
+  
+      left: -300px;
+    right: -28px;
+    bottom: -35px;
+    top: 60px;
+   
+   }
   
     @include tablet {
       left: -750px;
@@ -105,6 +113,14 @@
     background-image: url(../images/blog/icon-line-mobile-2.png);
     background-repeat: no-repeat;
     background-size: contain;
+    @media screen and (min-width: 320px) and (max-width: 479px) {
+  
+      left: -300px;
+      right: -36px;
+      bottom: -46px;
+      top: 70px;
+   
+   }
   
     @include tablet {
       left: -750px;
