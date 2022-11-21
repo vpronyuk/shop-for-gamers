@@ -1,16 +1,13 @@
 
-body {
-    font-family: "Roboto", sans-serif;
 
-  }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    background-color: #01383A;
-    padding:auto 0;
-  }
+// img {
+//     display: block;
+//     max-width: 100%;
+//     height: auto;
+//     background-color: #01383A;
+//     padding:auto 0;
+//   }
  
 
 .blog {
@@ -24,26 +21,24 @@ img {
     background-size: cover;
   }
  .blog-container{
-  
   @include tablet{
     padding-left: 40px;
     padding-right: 40px;
   }
   @include desktop{
-  
-    width:1200px;
-    padding-left: 40px;
-    padding-right: 40px;
+    width:1280px;
+    padding-right: none;
+    
+   
   }
  }
   .blog{
     display:flex;
     flex-direction: column;
     @include desktop{
+
       display:block;
-      width:1200px;
-      padding-left: 40px;
-      padding-right: 40px;
+      width:1280px;
     }
    
   
@@ -51,35 +46,85 @@ img {
 
   
   .blog-title {
-    font-weight: 600;
+    position:relative;
+    font-weight: 500;
     font-size: 24px;
     line-height: 1.17;
     text-align: left;
     letter-spacing: 0.03em;
-    color: #ffffff;
+    color: var(--white-color-text);
     padding-top:40px;
     padding-bottom:4px;
     @include tablet{
       padding-top:120px;
       font-size: 56px;
       margin-bottom:11px;
+      padding-left:99px;
 
+    }
+    @include desktop{
+      margin-bottom:8px;
+      padding-left: 142px;
+      padding-top:120px;
     }
    
   }
-  .arrow{
-    width: 100%;
-    height: 7px;
-    // border: 1px solid rgba(123, 227, 74, 0.25);
-    border-radius: 25%;
-    background-color: transparent;
+
+  .blog-title::before {
+    content: '';
     position: absolute;
-    padding: none;
-    
+    left: -300px;
+    right: -18px;
+    bottom: -35px;
+    top: 55px;
+    margin-bottom: 10px;
+    background-image: url(../images/blog/icon-line-mobile-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  
+    @include tablet {
+      left: -750px;
+      right: -38px;
+      top: 150px;
+      background-image: url(../images/blog/icon-line-tablet-1.png);
+    }
+  
+    @include desktop {
+      background-image: url(../images/blog/icon-line-desktop-1.png);
+      left: -350px;
+      top: 170px;
+    }
   }
+  .blog-title::after {
+    content: '';
+    position: absolute;
+    left: -300px;
+    right: 4px;
+    bottom: -43px;
+    top: 51px;
+    background-image: url(../images/blog/icon-line-mobile-2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  
+    @include tablet {
+      left: -750px;
+      right: -40px;
+      bottom: -34px;
+      top: 158px;
+      background-image: url(../images/blog/icon-line-tablet-2.png);
+    }
+  
+    @include desktop {
+      background-image: url(../images/blog/icon-line-desktop-2.png);
+      left: -350px;
+      top: 178px;
+    }
+  }
+  
+  
   .photo{
-   
-    width: 480px;
+ 
+    width: 100%;
     background-size:cover;
     padding-left: 0px;
     padding-right: 0px;
@@ -91,6 +136,7 @@ img {
     }
     @include desktop{
       width:387px;
+      height: 364px;
      
   }}
   .blog-list {
@@ -102,17 +148,30 @@ img {
       width: 688px;
     }
     @include desktop{
+      width: 1200px;
       display:block;
-      width:1200px;
-     
+      margin-top:48px;
+      
     }
   }
   .cards {
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  //  margin-bottom:24px;
-
+    @media screen and (min-width: 320px) and (max-width: 479px) {
+  width: 100%;
+      display:flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    
+   }
+    
+@include desktop{
+  width: 1200px;
+  display:flex;
+  flex-direction: row;
+ 
+ 
+//   width: calc(( 100% - 120px ) / 2);
+// justify-content: space-between;
+}
   }
 
   .cards:not(:last-child) {
@@ -120,21 +179,35 @@ img {
     @include tablet{
       margin-bottom: 44px;
     }
+    @include desktop{
+      margin-bottom: 40px; 
+    }
   }
   .cards-title {
-    font-weight: 600;
+    // max-width: 288px;
+    font-weight: 500;
     font-size: 24px;
     line-height: 1.17;
     text-align: left;
     letter-spacing: 0.03em;
-   
-    color: #ffffff;
+    color: var(--white-color-text);
     margin-bottom:16px;
     @include tablet{
       font-size: 56px;
       line-height: 1;
     }
+    @include desktop{
+      margin-bottom: 52px;
+     
+    }
 
+  }
+  .blog-text-wrap{
+    @include desktop{
+      display:block;
+      width:693px;
+    }
+    
   }
  
   
@@ -142,12 +215,45 @@ img {
   @include tablet{
     display:flex;
     flex-direction: row;
+ 
+  }
+ 
+  
+}
+.blog-photo-desktop{
+  @media screen and (min-width: 320px)
+   and (max-width: 479px) {
+    display:none;
+ }
+  @include mobile{
+    display:none;
+  }
+  @include tablet{
+    display:none;
+  }
+  @include desktop{
+    display:block;
+    margin-right: 120px;
   }
 }
+
+// .blog-photo>.container{
+//   padding-left:0;
+//   padding-right:0;
+//   width:100%;
+// }
 .blog-photo{
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+  
+   margin-left:-15px;
+   margin-right: -15px;
+  
+ } 
   @include tablet{
     margin-right: 40px;
-  
+    @include desktop{
+      display:none;
+    }
   }
   
 }
@@ -155,24 +261,39 @@ img {
   margin-top: 8px;
   @include tablet{
   padding-top:100px;
+  @include desktop{
+  
+    display:flex;
+    flex-direction: row;
+    // justify-content: flex-end;
+    padding-top:0px;
+    align-items: baseline;
+    margin-top: 0px;
+      width: 692px;
+      margin-bottom:24px;
+      
+  }
 }
   
 }
   .blog-author {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1;
-    
-    // letter-spacing: 0.03em;
    
-    color: #ffffff;
+    color: var(--white-color-text);
     @include tablet{
       width: 248px;
       font-size: 24px;
     }
+    @include desktop{
+      width: 249px;
+      height:24px;
+      font-size: 24px;
+    }
   }
   .blog-updates {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1;
     text-align: left;
@@ -181,16 +302,26 @@ img {
     
     color:#8D9289;
     @include tablet{
-      font-weight: 600;
+      font-weight: 500;
       width: 261px;
       font-size: 24px;
       margin-top: 32px;
+    }
+     @include desktop{
+      min-width: 347px;
+      height:24px;
+      font-size: 24px;
+      margin-left: 96px;
+      margin-top:0;
     }
   }
 
   .article-text{
     margin-top:16px;
     display: block;
+    @include desktop{
+      margin-top:24px;  
+    }
   }
   .blog-text {
     display: block;
@@ -199,21 +330,22 @@ img {
     line-height: 1.19;
     text-align: left;  
     margin-bottom:8px;
-    color: #ffffff;
+    color: var(--white-color-text);
     @include tablet{
       font-size: 24px;
       line-height: 1.17;
     }
+    @include desktop{
+      margin-bottom:16px;  
+    }
   }
   .blog-moreinfo-link {
     display: block;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1;
     text-align: right; 
-    
-  
-    color: #86E543;
+    color: var(--light-green-color);
     @include tablet{
       font-size: 24px;
       line-height: 1;
@@ -238,18 +370,19 @@ img {
   
 
   .blog-dots {
-   background-color: #ffffff;
+     
+   background-color: var(--white-color-text);
     width:16px;
     height: 16px;
     border-radius:50%;
-    border: 1px solid #ffffff;
+    border: 1px solid var(--white-color-text);
    
     margin-left:16px;
   }
   .oval{
-    background-color: #ffffff;
+    background-color: var(--white-color-text);
     width:40px;
     height: 16px;
     border-radius:30%;
-    border: 1px solid #ffffff;
+    border: 1px solid var(--white-color-text);
   }
