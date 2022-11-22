@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
@@ -19,6 +24,7 @@
       <include src="./partials/header.html"></include>
     </header>
     <main>
+      <include src="./take-order.html"></include>
       <include src="./partials/hero.html"></include>
       <include src="./partials/gallery.html"></include>
       <include src="./partials/sale.html"></include>
@@ -26,5 +32,16 @@
     <footer>
       <include src="./partials/footer.html"></include>
     </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+    </script>
   </body>
 </html>
