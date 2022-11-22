@@ -74,6 +74,10 @@
 
   transition: box-shadow var(--transit-duration) var(--transit-timing);
 
+  &--center {
+    margin: 0 auto;
+  }
+
   &:hover,
   &:focus {
     box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5),
@@ -134,7 +138,7 @@
   transition: filter var(--transit-duration) var(--transit-timing);
 
   &:hover,
-  &focus {
+  &:focus {
     filter: drop-shadow(0px 4px 10px rgba(134, 229, 67, 0.1))
       drop-shadow(0px 4px 20px rgba(134, 229, 67, 0.4));
   }

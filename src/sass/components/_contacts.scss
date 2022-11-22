@@ -1,0 +1,289 @@
+.contacts {
+  background-image: url(../images/contacts/bg-mob-1x.jpg);
+  padding-top: 40px;
+  padding-bottom: 48px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include retina() {
+    background-image: url(../images/contacts/bg-mob-2x.jpg);
+  }
+
+  @include tablet() {
+    background-image: url(../images/contacts/bg-tab-1x.jpg);
+    @include retina() {
+      background-image: url(../images/contacts/bg-tab-2x.jpg);
+    }
+  }
+
+  @include desktop() {
+    background-image: url(../images/contacts/bg-1x.jpg);
+    @include retina() {
+      background-image: url(../images/contacts/bg-2x.jpg);
+    }
+  }
+
+  @include tablet() {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.contacts-container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+.contacts-title {
+  margin-bottom: 35px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+
+  color: #ffffff;
+
+  @include tablet() {
+    font-size: 56px;
+    line-height: 1.17;
+  }
+
+  @include desktop() {
+    margin-bottom: 75px;
+  }
+}
+
+.contacts-wrapper {
+  @include desktop() {
+    margin-top: 57px;
+    display: flex;
+  }
+}
+
+.contacts-wrapper-content {
+  @include desktop() {
+    margin-right: 122px;
+  }
+}
+
+.contacts-content {
+  margin-top: 16px;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+
+  color: #ffffff;
+
+  @include tablet() {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width: 488px;
+    font-size: 24px;
+    line-height: 1.16;
+  }
+
+  @include desktop() {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.contacts-list {
+  margin-bottom: 24px;
+
+  @include tablet() {
+    margin-bottom: 40px;
+    display: flex;
+    min-width: 471px;
+  }
+
+  @include desktop() {
+    display: block;
+    min-width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.contacts-item:not(:last-child) {
+  margin-bottom: 24px;
+
+  @include tablet() {
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+
+  @include desktop() {
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+}
+
+.contacts-text {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+
+  color: #ffffff;
+
+  @include tablet() {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+
+// .contacts-picture {
+// }
+
+.contacts-list {
+  min-width: 147px;
+}
+
+.contacts-link {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+
+  text-transform: capitalize;
+
+  color: #8d9289;
+
+  @include tablet() {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+
+.contacts-link-tel {
+  margin-bottom: 8px;
+}
+
+.contactsForm {
+  @include tablet() {
+    width: 591px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include desktop() {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+.contactsForm-data {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+
+  color: #86e543;
+
+  @include tablet() {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
+.contactsForm-field:not(:last-child) {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactsForm-input {
+  padding-bottom: 4px;
+  width: 100%;
+  min-height: 24px;
+  background-color: transparent;
+  border: transparent;
+  border-bottom: 1px solid #86e543;
+  &:focus {
+    outline: 1px solid #86e543;
+  }
+}
+
+.contactsForm-field input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  text-transform: capitalize;
+
+  color: #ffffff;
+
+  @include tablet() {
+    font-size: 18px;
+  }
+}
+
+.contactsWrapper-textarea {
+  margin-bottom: 24px;
+
+  @include desktop() {
+    margin-bottom: 47px;
+  }
+}
+
+.contactsForm-textarea {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: #cdcdcd;
+
+  @include tablet() {
+    font-size: 18px;
+  }
+}
+
+textarea {
+  margin-top: 4px;
+
+  resize: none;
+  min-height: 95px;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #86e543;
+
+  @include tablet() {
+    min-height: 120px;
+  }
+}
+
+.contacts-btn {
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+
+  @include desktop() {
+    margin-left: 0;
+    font-size: 32px;
+    line-height: 1.19;
+    min-width: 306px;
+    height: 70px;
+  }
+}
+
+.img {
+  @media screen and (max-width: 767px) {
+    width: 100vw;
+    margin-left: -15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    border-radius: 14px;
+  }
+}

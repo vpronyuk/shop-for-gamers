@@ -4,20 +4,122 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacts - Shop For Gamers</title>
-    <link rel="icon" href="../favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../sass/index.scss" />
+    <link rel="stylesheet" href="./sass/index.scss" />
   </head>
   <body>
     <header>
       <include src="./partials/header.html"></include>
     </header>
-    <main></main>
+    <main>
+      <section class="contacts">
+        <div class="container">
+          <h1 class="contacts-title">Сontacts</h1>
+          <picture>
+            <source
+              srcset="
+                ./images/contacts/game-set-1x.jpg 1x,
+                ./images/contacts/game-set-2x.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+
+            <source
+              srcset="
+                ./images/contacts/game-set-tab-1x.jpg 1x,
+                ./images/contacts/game-set-tab-2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/contacts/game-set-mob-1x.jpg 1x,
+                ./images/contacts/game-set-mob-2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+
+            <img
+              class="img"
+              src="./images/contacts/game-set.jpg"
+              alt="game-set"
+              width="1200"
+            />
+          </picture>
+
+          <div class="contacts-wrapper">
+            <div class="contacts-wrapper-content">
+              <p class="contacts-content">
+                In case of queries about order handling and/ or delay, drop us
+                an email at <br /><br />
+                info@shopforgamers.com
+              </p>
+              <ul class="contacts-list list">
+                <li class="contacts-item">
+                  <p class="contacts-text">Email</p>
+                  <a class="contacts-link" href="mailto:sfg.info@gmail.com"
+                    >sfg.info@gmail.com</a
+                  >
+                </li>
+                <li class="contacts-item">
+                  <p class="contacts-text">Phone number</p>
+                  <a
+                    class="contacts-link contacts-link-tel"
+                    href="tel:+38(093)6432288"
+                    >+38 (093) 643 22 88</a
+                  >
+                  <a class="contacts-link" href="tel:+38(050)3454423"
+                    >+38 (050) 345 44 23</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <form class="contactsForm">
+              <p class="contactsForm-data">CONTACT US</p>
+              <!-- name -->
+              <div class="contactsForm-field">
+                <label for="name">
+                  <input
+                    class="contactsForm-input"
+                    type="name"
+                    name="name"
+                    id="name"
+                    placeholder="Name"
+                  />
+                </label>
+              </div>
+
+              <!-- email -->
+              <div class="contactsForm-field">
+                <label for="email">
+                  <input
+                    class="contactsForm-input"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </label>
+              </div>
+
+              <!-- textarea -->
+              <div class="contactsWrapper-textarea">
+                <label class="contactsForm-textarea">Leave your message</label>
+                <textarea name="text"></textarea>
+              </div>
+
+              <!-- button -->
+              <button class="send-btn contacts-btn" type="submit">SEND</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
       <include src="./partials/footer.html"></include>
     </footer>
