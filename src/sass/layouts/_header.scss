@@ -25,7 +25,7 @@
     padding: 40px;
   }
 }
-.logo {
+.header-logo {
   display: inline-block;
   max-width: 120px;
 
@@ -48,6 +48,8 @@
 }
 .btn-area {
   position: relative;
+  width: 64px;
+  height: 46px;
 }
 .menu-open-btn.btn {
   background-color: transparent;
@@ -58,12 +60,13 @@
   }
 }
 .menu-close-btn.btn {
+  display: none;
   position: absolute;
   top: 0;
-  left: 9px;
+  left: 0px;
   background-color: transparent;
   border: none;
-  fill: black;
+  fill: transparent;
 }
 
 .nav {
@@ -136,10 +139,13 @@
 .mobile-modal.is-hidden {
   display: none;
 }
-
-.mobile-modal.is-hidden > .menu-close-btn.btn {
+body.no-scroll .menu-close-btn.btn {
+  display: flex;
+}
+body.no-scroll .menu-open-btn.btn {
   display: none;
 }
+
 .mobile-modale-list {
   display: flex;
   flex-direction: column;
