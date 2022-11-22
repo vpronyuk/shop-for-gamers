@@ -61,6 +61,7 @@
 }
 
 .sale-title {
+  position: relative;
   font-weight: 600;
   font-size: 24px;
   line-height: 28px;
@@ -83,6 +84,79 @@
     margin-bottom: 43px;
   }
 }
+
+.sale-title::before {
+  content: '';
+  position: absolute;
+  left: -15px;
+  right: -18px;
+  bottom: -35px;
+  top: 25px;
+  margin-bottom: 10px;
+  background-image: url(../images/accessories/icon-line-mobile-1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include tablet {
+    left: -142px;
+    right: -40px;
+    top: 55px;
+    background-image: url(../images/accessories/icon-line-tablet-1.png);
+  }
+
+  @include desktop {
+    background-image: url(../images/accessories/icon-line-desktop-1.png);
+  }
+}
+
+.sale-title::before {
+  content: '';
+  position: absolute;
+  left: -15px;
+  right: -18px;
+  bottom: -35px;
+  top: 25px;
+  margin-bottom: 10px;
+  background-image: url(../images/accessories/icon-line-mobile-1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include tablet {
+    left: -142px;
+    right: -40px;
+    top: 55px;
+    background-image: url(../images/accessories/icon-line-tablet-1.png);
+  }
+
+  @include desktop {
+    background-image: url(../images/accessories/icon-line-desktop-1.png);
+  }
+}
+
+.sale-title::after {
+  content: '';
+  position: absolute;
+  left: -15px;
+  right: -18px;
+  bottom: -43px;
+  top: 30px;
+  background-image: url(../images/accessories/icon-line-mobile-2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include tablet {
+    left: -142px;
+    right: -40px;
+    bottom: -35px;
+    top: 63px;
+    background-image: url(../images/accessories/icon-line-tablet-2.png);
+  }
+
+  @include desktop {
+    background-image: url(../images/accessories/icon-line-desktop-2.png);
+  }
+}
+
 .sale-list-content {
   padding: 0 16px 8px 8px;
 }
