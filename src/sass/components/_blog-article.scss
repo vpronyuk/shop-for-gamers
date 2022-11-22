@@ -36,6 +36,7 @@
   @include tablet {
     margin-left: 0;
     margin-right: 0;
+    border-radius: 50%;
   }
 }
 .top-text {
@@ -117,6 +118,7 @@
     display: block;
     // margin-left: 121px;
     width: 690px;
+    font-size: 24px;
   }
 }
 
@@ -126,14 +128,11 @@
   }
 }
 
-// .art-list {
-//   display: flex;
-//   flex-direction: column;
-//   gap: 20px;
-// }
-.art-item {
-}
-.art-list {
+.list-wrapper {
   list-style: decimal;
-  padding-left: 16px;
+  // padding-left: 16px;
+  // margin-left: 6px;
+}
+
+.art-item {
 }
