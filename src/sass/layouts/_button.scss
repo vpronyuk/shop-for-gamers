@@ -6,7 +6,7 @@
   padding: 5px;
   cursor: pointer;
   border-radius: 16px;
-
+  border: none;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -41,10 +41,12 @@
 
 // Button for "Start shopping" / "Buy it now" / Modals
 .big-gn-btn {
+  display: block;
   border: none;
   min-width: 173px;
   height: 51px;
-
+  border-radius: 16px;
+  font-weight: 700;
   background-color: var(--light-green-color);
   text-transform: uppercase;
   color: var(--dark-green-color);
