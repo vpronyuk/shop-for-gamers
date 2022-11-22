@@ -1,0 +1,139 @@
+.blog-art {
+  color: #fff;
+  padding-top: 40px;
+  padding-bottom: 48px;
+
+  @include tablet {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  @include desktop {
+    padding-top: 112px;
+    padding-bottom: 120px;
+  }
+}
+.art-title {
+  margin-bottom: 31px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+
+  @include tablet {
+    margin-bottom: 72px;
+    font-size: 56px;
+    line-height: 1;
+  }
+
+  @include desktop {
+    margin-bottom: 59px;
+  }
+}
+.art-photo {
+  margin-left: -16px;
+  margin-right: -16px;
+
+  @include tablet {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.top-text {
+  margin-top: 20px;
+  margin-bottom: 8px;
+
+  @include tablet {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.desk-sub {
+  display: flex;
+  gap: 97px;
+}
+.art-top-subtitle {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  @include tablet {
+    margin-bottom: 32px;
+    width: 134px;
+    color: #86e543;
+    font-size: 24px;
+  }
+  @include desktop {
+    width: 248px;
+  }
+}
+.art-bottom-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  color: #8d9289;
+  @include tablet {
+    width: 261px;
+    font-size: 24px;
+  }
+  @include desktop {
+    margin-top: 0;
+    width: 346px;
+  }
+}
+.top-wrapper {
+  @include tablet {
+    display: flex;
+    gap: 40px;
+    align-items: flex-end;
+    margin-bottom: 16px;
+  }
+  @include desktop {
+    gap: 121px;
+    align-items: center;
+  }
+}
+.art-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 16px;
+  line-height: 1.19;
+  @include tablet {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+.art-tablet-text {
+  @include tablet {
+    color: #86e543;
+  }
+}
+
+.top-desktop {
+  display: none;
+  @include desktop {
+    display: block;
+    // margin-left: 121px;
+    width: 690px;
+  }
+}
+
+.art-desk {
+  @include desktop {
+    display: none;
+  }
+}
+
+// .art-list {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 20px;
+// }
+.art-item {
+}
+.art-list {
+  list-style: decimal;
+  padding-left: 16px;
+}
