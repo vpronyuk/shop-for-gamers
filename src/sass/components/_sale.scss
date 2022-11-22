@@ -5,8 +5,6 @@
 }
 
 .sale-page {
-  background-color: #01383a;
-
   @include tablet {
     background-image: url(../images/sale-section/backgd-tablet.jpg);
     background-repeat: no-repeat;
@@ -133,7 +131,7 @@
 
   @include desktop {
     top: 55px;
-    left: -180px;
+    left: -182px;
     background-image: url(../images/sale-section/icon-bottom-line-desktop.png);
   }
 }
