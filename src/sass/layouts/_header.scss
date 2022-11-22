@@ -9,6 +9,7 @@
 }
 
 .header-container {
+  width: 100%;
   position: relative;
   z-index: 2;
 
@@ -45,6 +46,9 @@
     color: var(--light-green-color);
   }
 }
+.btn-area {
+  position: relative;
+}
 .menu-open-btn.btn {
   background-color: transparent;
   border: none;
@@ -53,7 +57,10 @@
     display: none;
   }
 }
-.menu-close-btn {
+.menu-close-btn.btn {
+  position: absolute;
+  top: 0;
+  left: 9px;
   background-color: transparent;
   border: none;
   fill: black;
@@ -79,7 +86,7 @@
 }
 .navigation-link::after {
   content: '';
-  position: absolute;
+
   top: 32px;
 
   display: block;
@@ -103,9 +110,10 @@
   }
 }
 .mobile-modal {
+  position: absolute;
   margin: 0 auto;
   padding: 64px 81px 0px 81px;
-  min-width: 320px;
+  width: 100%;
   height: 100vh;
 
   background-color: var(--dark-green-color);
@@ -125,7 +133,13 @@
     }
   }
 }
+.mobile-modal.is-hidden {
+  display: none;
+}
 
+.mobile-modal.is-hidden > .menu-close-btn.btn {
+  display: none;
+}
 .mobile-modale-list {
   display: flex;
   flex-direction: column;
