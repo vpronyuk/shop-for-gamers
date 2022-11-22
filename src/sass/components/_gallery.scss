@@ -1,0 +1,24 @@
+.swiper-pagination {
+  position: relative;
+  top: 24px;
+  margin-bottom: 48px;
+  @include tablet {
+    margin-bottom: 120px;
+  }
+  @include desktop {
+    margin-bottom: 120px;
+  }
+}
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  width: 40px;
+  height: 16px;
+
+  background: #ffffff;
+  border-radius: 30px;
+}
