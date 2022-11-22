@@ -1,4 +1,17 @@
+.no-scroll {
+  overflow: hidden;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .header-container {
+  position: relative;
+  z-index: 2;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,11 +33,16 @@
   line-height: 1.17;
   text-align: center;
   color: var(--white-color-text);
+  transition: color var(--transit-duration) var(--transit-timing);
   @include tablet {
     margin-right: 161px;
   }
   @include desktop {
     margin-right: 343px;
+  }
+  &:hover,
+  &:focus {
+    color: var(--light-green-color);
   }
 }
 .menu-open-btn.btn {
@@ -35,6 +53,12 @@
     display: none;
   }
 }
+.menu-close-btn {
+  background-color: transparent;
+  border: none;
+  fill: black;
+}
+
 .nav {
   @media screen and (max-width: 1279px) {
     display: none;
@@ -46,11 +70,28 @@
   gap: 48px;
 }
 .navigation-link {
-  padding: 10px 0;
+  position: relative;
+  padding: 8px 0;
 
   font-size: 16px;
   line-height: 1;
   color: var(--white-color-text);
+}
+.navigation-link::after {
+  content: '';
+  position: absolute;
+  top: 32px;
+
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--light-green-color);
+  opacity: 0;
+  transition: opacity var(--transit-duration) var(--transit-timing);
+}
+.navigation-link:hover.navigation-link::after,
+.navigation-link:focus.navigation-link::after {
+  opacity: 1;
 }
 
 .header-btn.shop-btn {
@@ -59,5 +100,48 @@
   }
   @include tablet {
     margin-left: auto;
+  }
+}
+.mobile-modal {
+  margin: 0 auto;
+  padding: 64px 81px 0px 81px;
+  min-width: 320px;
+  height: 100vh;
+
+  background-color: var(--dark-green-color);
+  background-image: url(../images/header/mobile-bg-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include retina {
+    background-image: url(../images/header/mobile-bg-2x.jpg);
+  }
+  @include tablet {
+    width: 768px;
+    background-image: url(../images/header/tablet-bg-1x.jpg);
+    @include retina {
+      background-image: url(../images/header/tablet-bg-2x.jpg);
+    }
+  }
+}
+
+.mobile-modale-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+.mobile-link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  text-transform: uppercase;
+
+  color: var(--white-color-text);
+  transition: color var(--transit-duration) var(--transit-timing);
+  &:hover,
+  &:focus {
+    color: var(--light-green-color);
   }
 }
