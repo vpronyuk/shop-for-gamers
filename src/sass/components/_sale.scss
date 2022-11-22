@@ -5,7 +5,7 @@
 }
 
 .sale-page {
-  background-color: darkgreen;
+  background-color: #01383a;
 
   @include tablet {
     background-image: url(../images/sale-section/backgd-tablet.jpg);
@@ -18,9 +18,10 @@
   @include desktop {
     background-image: url(../images/sale-section/backgd-desktop.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    margin-left: auto;
-    margin-right: auto;
+    background-size: 1457px;
+    background-position-x: -97px;
+    // margin-left: auto;
+    // margin-right: auto;
     padding-bottom: 120px;
     max-width: 1280px;
     @include retina {
@@ -95,7 +96,7 @@
   margin-bottom: 10px;
   background-image: url(../images/accessories/icon-line-mobile-1.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 
   @include tablet {
     left: -142px;
@@ -105,31 +106,9 @@
   }
 
   @include desktop {
-    background-image: url(../images/accessories/icon-line-desktop-1.png);
-  }
-}
-
-.sale-title::before {
-  content: '';
-  position: absolute;
-  left: -15px;
-  right: -18px;
-  bottom: -35px;
-  top: 25px;
-  margin-bottom: 10px;
-  background-image: url(../images/accessories/icon-line-mobile-1.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  @include tablet {
-    left: -142px;
-    right: -40px;
-    top: 55px;
-    background-image: url(../images/accessories/icon-line-tablet-1.png);
-  }
-
-  @include desktop {
-    background-image: url(../images/accessories/icon-line-desktop-1.png);
+    top: 43px;
+    left: -182px;
+    background-image: url(../images/sale-section/icon-top-line-desktop.png);
   }
 }
 
@@ -142,7 +121,7 @@
   top: 30px;
   background-image: url(../images/accessories/icon-line-mobile-2.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 
   @include tablet {
     left: -142px;
@@ -153,12 +132,14 @@
   }
 
   @include desktop {
-    background-image: url(../images/accessories/icon-line-desktop-2.png);
+    top: 55px;
+    left: -180px;
+    background-image: url(../images/sale-section/icon-bottom-line-desktop.png);
   }
 }
 
 .sale-list-content {
-  padding: 0 16px 8px 8px;
+  padding: 0 0 8px 8px;
 }
 
 .sale-top-text {
@@ -185,7 +166,6 @@
 }
 
 .sale-new-price {
-  margin-right: 19px;
   color: var(--light-green-color);
   font-weight: 500;
   font-size: 20px;
