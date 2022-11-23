@@ -1,5 +1,5 @@
 .blog-art {
-  color: #fff;
+  color: var(--white-color-text);
   padding-top: 40px;
   padding-bottom: 48px;
 
@@ -120,7 +120,7 @@
   @include tablet {
     margin-bottom: 32px;
     width: 134px;
-    color: #86e543;
+    color: var(--light-green-color);
     font-size: 24px;
   }
   @include desktop {
@@ -131,7 +131,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
-  color: #8d9289;
+  color: var(--grey-color);
   @include tablet {
     min-width: 261px;
     font-size: 24px;
@@ -172,7 +172,7 @@
 
 .art-tablet-text {
   @include tablet {
-    color: #86e543;
+    color: var(--light-green-color);
   }
 }
 
@@ -180,7 +180,6 @@
   display: none;
   @include desktop {
     display: block;
-    // margin-left: 121px;
     width: 690px;
     font-size: 24px;
   }
