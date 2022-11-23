@@ -1,15 +1,15 @@
 
 
-.blog {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/blog/blog-mob-background-1x-min.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
+// .blog {
+//     background-image: linear-gradient(
+//         rgba(47, 48, 58, 0.4),
+//         rgba(47, 48, 58, 0.4)
+//       ),
+//       url(../images/blog/blog-mob-background-1x-min.jpg);
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+//   }
  .blog-container{
   @include tablet{
     padding-left: 40px;
@@ -64,27 +64,30 @@
     content: '';
     position: absolute;
     left: -300px;
-    right: -18px;
-    bottom: -35px;
-    top: 55px;
+    right: -14px;
+    bottom: -43px;
+    top: 51px;
     margin-bottom: 10px;
     background-image: url(../images/blog/icon-line-mobile-1.png);
     background-repeat: no-repeat;
     background-size: contain;
     @media screen and (min-width: 320px) and (max-width: 479px) {
   
-      left: -300px;
-    right: -28px;
-    bottom: -35px;
-    top: 60px;
-   
+  
+    left: -300px;
+      right: -36px;
+      bottom: -46px;
+      top: 70px;
    }
   
     @include tablet {
+
       left: -750px;
-      right: -38px;
-      top: 150px;
-      background-image: url(../images/blog/icon-line-tablet-1.png);
+      right: -33px;
+      bottom: -34px;
+      top: 158px;
+      background-image: url(../images/blog/icon-line-tablet-2.png);
+      
     }
   
     @include desktop {
@@ -97,27 +100,27 @@
     content: '';
     position: absolute;
     left: -300px;
-    right: 4px;
-    bottom: -43px;
-    top: 51px;
+    right: -18px;
+    bottom: -35px;
+    top: 60px;
     background-image: url(../images/blog/icon-line-mobile-2.png);
     background-repeat: no-repeat;
     background-size: contain;
     @media screen and (min-width: 320px) and (max-width: 479px) {
   
       left: -300px;
-      right: -36px;
-      bottom: -46px;
-      top: 70px;
+      right: -28px;
+      bottom: -35px;
+      top: 60px;
+     
    
    }
   
     @include tablet {
       left: -750px;
-      right: -40px;
-      bottom: -34px;
-      top: 158px;
-      background-image: url(../images/blog/icon-line-tablet-2.png);
+      right: -38px;
+      top: 150px;
+      background-image: url(../images/blog/icon-line-tablet-1.png);
     }
   
     @include desktop {
@@ -302,14 +305,14 @@
     color:#8D9289;
     @include tablet{
       font-weight: 500;
-      width: 261px;
+      min-width: 261px;
       font-size: 24px;
       margin-top: 32px;
     }
      @include desktop{
       min-width: 347px;
       height:24px;
-      font-size: 24px;
+      font-size: 23px;
       margin-left: 96px;
       margin-top:0;
     }
