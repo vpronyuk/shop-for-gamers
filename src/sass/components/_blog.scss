@@ -16,7 +16,6 @@
   flex-direction: column;
 }
 
-
 .blog-title {
   position: relative;
   font-weight: 500;
@@ -31,128 +30,76 @@
     padding-top: 120px;
     font-size: 56px;
     margin-bottom: 11px;
-    padding-left: 99px;
+    margin-left: 99px;
   }
   @include desktop {
     margin-bottom: 8px;
-    padding-left: 142px;
+    margin-left: 102px;
     padding-top: 120px;
   }
-}
 
-.blog-title::before {
-  content: '';
-  position: absolute;
-  left: -300px;
-  right: -18px;
-  bottom: -35px;
-  top: 55px;
-  margin-bottom: 10px;
-  background-image: url(../images/blog/icon-line-mobile-1.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  @media screen and (min-width: 320px) and (max-width: 479px) {
-    left: -300px;
-    right: -14px;
-    bottom: -43px;
-    top: 51px;
-    margin-bottom: 10px;
-    background-image: url(../images/blog/icon-line-mobile-1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    @media screen and (min-width: 320px) and (max-width: 479px) {
-  
-  
-    left: -300px;
-      right: -36px;
-      bottom: -46px;
-      top: 70px;
-   }
-  
+  &::before {
+    content: ' ';
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    width: 480px;
+    height: 30px;
+    top: 63px;
+    left: -16px;
+    background-image: url(../images/blog/title-top-line-mob.png);
+
+    @media screen and (max-width: $mobile) {
+      width: 100vw;
+    }
+
     @include tablet {
-
-      left: -750px;
-      right: -33px;
-      bottom: -34px;
-      top: 158px;
-      background-image: url(../images/blog/icon-line-tablet-2.png);
-      
+      width: 1280px;
+      height: 30px;
+      left: -100px;
+      top: 187px;
+      background-image: url(../images/blog/title-top-line.png);
     }
-  
+
     @include desktop {
-      background-image: url(../images/blog/icon-line-desktop-1.png);
-      left: -350px;
-      top: 170px;
+      width: 1280px;
+      height: 30px;
+      top: 180px;
+      left: -140px;
+      background-image: url(../images/blog/title-top-line-desk.png);
     }
   }
 
-  @include tablet {
-    left: -750px;
-    right: -38px;
-    top: 150px;
-    background-image: url(../images/blog/icon-line-tablet-1.png);
-  }
+  &::after {
+    content: ' ';
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    width: 480px;
+    height: 30px;
+    top: 66px;
+    left: -16px;
+    background-image: url(../images/blog/title-bottom-line-mob.png);
 
-  @include desktop {
-    background-image: url(../images/blog/icon-line-desktop-1.png);
-    left: -350px;
-    top: 170px;
-  }
-}
-.blog-title::after {
-  content: '';
-  position: absolute;
-  left: -300px;
-  right: 4px;
-  bottom: -43px;
-  top: 51px;
-  background-image: url(../images/blog/icon-line-mobile-2.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  @media screen and (min-width: 320px) and (max-width: 479px) {
-    left: -300px;
-    right: -18px;
-    bottom: -35px;
-    top: 60px;
-    background-image: url(../images/blog/icon-line-mobile-2.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    @media screen and (min-width: 320px) and (max-width: 479px) {
-  
-      left: -300px;
-      right: -28px;
-      bottom: -35px;
-      top: 60px;
-     
-   
-   }
-  
+    @media screen and (max-width: $mobile) {
+      width: 100vw;
+    }
+
     @include tablet {
-      left: -750px;
-      right: -38px;
-      top: 150px;
-      background-image: url(../images/blog/icon-line-tablet-1.png);
+      width: 1280px;
+      height: 30px;
+      left: -100px;
+      top: 195px;
+      background-image: url(../images/blog/title-bottom-line.png);
     }
-  
+
     @include desktop {
-      background-image: url(../images/blog/icon-line-desktop-2.png);
-      left: -350px;
-      top: 178px;
+      width: 1280px;
+      height: 30px;
+      top: 190px;
+      left: -140px;
+      background-image: url(../images/blog/title-bottom-line-desk.png);
     }
-  }
-
-  @include tablet {
-    left: -750px;
-    right: -40px;
-    bottom: -34px;
-    top: 158px;
-    background-image: url(../images/blog/icon-line-tablet-2.png);
-  }
-
-  @include desktop {
-    background-image: url(../images/blog/icon-line-desktop-2.png);
-    left: -350px;
-    top: 178px;
   }
 }
 
@@ -320,21 +267,21 @@
     line-height: 1;
     text-align: left;
     letter-spacing: 0.03em;
-  margin-top:8px;
-    
-    color:#8D9289;
-    @include tablet{
+    margin-top: 8px;
+
+    color: #8d9289;
+    @include tablet {
       font-weight: 500;
       min-width: 261px;
       font-size: 24px;
       margin-top: 32px;
     }
-     @include desktop{
+    @include desktop {
       min-width: 347px;
-      height:24px;
+      height: 24px;
       font-size: 23px;
       margin-left: 96px;
-      margin-top:0;
+      margin-top: 0;
     }
   }
 }
