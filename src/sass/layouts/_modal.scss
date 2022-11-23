@@ -7,6 +7,7 @@
   border: 1px solid #000000;
   transition: opacity var(--transit-duration) var(--transit-timing),
     visibility var(--transit-duration) var(--transit-timing);
+  z-index: 1;
 }
 
 .modal {
