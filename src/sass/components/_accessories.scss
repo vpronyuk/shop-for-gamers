@@ -70,12 +70,21 @@
   @include desktop {
     background-image: url(../images/accessories/slider-desktop.png);
     width: 104px;
+    order: 5;
   }
 }
 
 .accessories-item {
+  display: none;
   @include tablet {
     width: 285px;
+  }
+}
+
+.accessories-item:nth-child(-n + 12) {
+  display: block;
+  @include desktop {
+    display: none;
   }
 }
 
@@ -84,19 +93,48 @@
   @include tablet {
     display: flex;
   }
+  @include desktop {
+    display: none;
+  }
+}
+
+.accessories-item:nth-last-child(-n + 4) {
+  @include tablet {
+    display: none;
+  }
+}
+
+.accessories-item.accessories-item__first {
+  @include desktop {
+    display: flex;
+  }
+}
+
+.accessories-item.accessories-item__second {
+  @include desktop {
+    display: flex;
+    order: 1;
+  }
+}
+
+.accessories-item.accessories-item__third {
+  @include desktop {
+    display: flex;
+    order: 2;
+  }
+}
+
+.accessories-item.accessories-item__fourth {
+  @include desktop {
+    display: flex;
+    order: 3;
+  }
 }
 
 .accessories-item:nth-child(-n + 10) {
   margin-bottom: 24px;
   @include tablet {
     margin-bottom: 0px;
-  }
-}
-
-.accessories-item:nth-child(n + 13) {
-  display: none;
-  @include desktop {
-    display: flex;
   }
 }
 
