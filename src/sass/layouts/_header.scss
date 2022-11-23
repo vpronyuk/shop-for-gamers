@@ -146,6 +146,10 @@ body.no-scroll .menu-open-btn.btn {
   display: none;
 }
 
+.mobile-modal.is-hidden {
+  display: none;
+}
+
 .mobile-modale-list {
   display: flex;
   flex-direction: column;
