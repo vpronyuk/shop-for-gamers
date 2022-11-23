@@ -14,6 +14,7 @@
   }
 }
 .art-title {
+  position: relative;
   margin-bottom: 31px;
   font-weight: 500;
   font-size: 24px;
@@ -26,9 +27,62 @@
   }
 
   @include desktop {
-    margin-bottom: 59px;
+    margin-bottom: 107px;
   }
 }
+
+.art-title::before {
+  content: '';
+  position: absolute;
+  left: -96px;
+  right: -16px;
+  top: 55px;
+  height: 40px;
+  background-image: url(../images/blog-article/icon-line-mobile-1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include tablet {
+    left: -142px;
+    right: -40px;
+    top: 105px;
+    background-image: url(../images/blog-article/icon-line-tablet-1.png);
+  }
+
+  @include desktop {
+    top: 63px;
+    left: -182px;
+    height: 60px;
+    background-image: url(../images/blog-article/icon-line-desktop-1.png);
+  }
+}
+
+.art-title::after {
+  content: '';
+  position: absolute;
+  left: -96px;
+  right: -16px;
+  top: 62px;
+  height: 40px;
+  background-image: url(../images/blog-article/icon-line-mobile-2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include tablet {
+    left: -142px;
+    right: -40px;
+    bottom: -35px;
+    top: 113px;
+    background-image: url(../images/blog-article/icon-line-tablet-2.png);
+  }
+
+  @include desktop {
+    top: 75px;
+    left: -182px;
+    background-image: url(../images/blog-article/icon-line-desktop-2.png);
+  }
+}
+
 .art-photo {
   margin-left: -16px;
   margin-right: -16px;
@@ -36,7 +90,12 @@
   @include tablet {
     margin-left: 0;
     margin-right: 0;
-    border-radius: 50%;
+  }
+}
+
+.art-picture {
+  @include tablet {
+    border-radius: 12px;
   }
 }
 .top-text {
@@ -65,7 +124,7 @@
     font-size: 24px;
   }
   @include desktop {
-    width: 248px;
+    min-width: 248px;
   }
 }
 .art-bottom-subtitle {
@@ -74,12 +133,12 @@
   line-height: 1;
   color: #8d9289;
   @include tablet {
-    width: 261px;
+    min-width: 261px;
     font-size: 24px;
   }
   @include desktop {
     margin-top: 0;
-    width: 346px;
+    min-width: 346px;
   }
 }
 .top-wrapper {
@@ -90,6 +149,7 @@
     margin-bottom: 16px;
   }
   @include desktop {
+    position: relative;
     gap: 121px;
     align-items: center;
   }
@@ -104,6 +164,10 @@
     font-size: 24px;
     line-height: 1.17;
   }
+}
+.desk-sub {
+  position: absolute;
+  top: -48px;
 }
 
 .art-tablet-text {
@@ -128,11 +192,17 @@
   }
 }
 
-.list-wrapper {
+.art-list {
   list-style: decimal;
-  // padding-left: 16px;
-  // margin-left: 6px;
+  padding-left: 16px;
+  margin-left: 6px;
 }
 
 .art-item {
+}
+
+.desk-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
