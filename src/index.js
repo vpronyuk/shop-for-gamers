@@ -1,3 +1,4 @@
-import './js/modal';
 import './js/menu';
+import './js/modal';
+import './js/modal-add';
 import './js/slider';
