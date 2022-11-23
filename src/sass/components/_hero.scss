@@ -7,17 +7,17 @@
   height: 601px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 284px;
+  padding-top: 180px;
   @include retina {
     background-image: url(../images/hero/hero-mob-2x.png);
   }
   @include tablet {
     background-image: url(../images/hero/hero-tab.png);
+    background-position-y: -134px;
     min-width: 768px;
     height: 860px;
     padding-left: 40px;
-    padding-top: 316px;
-    margin-bottom: 120px;
+    padding-top: 154px;
     @include retina {
       background-image: url(../images/hero/hero-tab-2x.png);
     }
@@ -28,15 +28,16 @@
     position: relative;
     left: 0;
     top: 0;
-    padding-top: 316px;
+    padding-top: 180px;
     padding-bottom: 208px;
     padding-left: 8px;
-    margin-bottom: 120px;
+
     @include retina {
       background-image: url(../images/hero/hero-2x.png);
     }
   }
 }
+
 .hero-title {
   font-weight: 500;
   font-size: 32px;
@@ -64,6 +65,7 @@
     margin-left: 142px;
   }
 }
+
 .big-gn-btn {
   margin: 0 auto;
   @include tablet {
@@ -73,6 +75,7 @@
     margin-left: 142px;
   }
 }
+
 .hero-title-mob {
   width: 180px;
   display: block;
