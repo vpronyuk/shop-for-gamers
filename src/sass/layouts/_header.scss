@@ -131,7 +131,7 @@ header {
     background-image: url(../images/header/mobile-bg-2x.jpg);
   }
   @include tablet {
-    width: 768px;
+    width: 100%;
     background-image: url(../images/header/tablet-bg-1x.jpg);
     @include retina {
       background-image: url(../images/header/tablet-bg-2x.jpg);
