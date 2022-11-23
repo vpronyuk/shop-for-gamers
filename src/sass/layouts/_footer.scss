@@ -95,7 +95,8 @@ footer {
   background-color: var(--light-green-color);
 }
 
-.menu-nav .link:hover::before {
+.menu-nav .link:hover::before,
+.menu-nav .link:focus::before {
   opacity: 1;
   // / width: 100%;
   transition: opacity var(--transit-duration) var(--transit-timing);
