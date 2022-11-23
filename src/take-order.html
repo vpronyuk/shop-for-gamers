@@ -318,12 +318,21 @@
             </form>
           </div>
           <div class="take-order__btn">
-            <button class="btn big-gn-btn btn-first" type="submit">
+            <button
+              class="btn big-gn-btn btn-first"
+              type="submit"
+              data-modal-open
+            >
               buy it now
             </button>
-            <button class="btn addcard-btn" type="submit">add to cart</button>
+            <button class="btn addcard-btn" type="submit" data-add-open>
+              add to cart
+            </button>
           </div>
         </div>
+
+        <include src="./partials/modal-add.html"></include>
+        <include src="./partials/modal-order.html"></include>
       </section>
     </main>
     <footer>
