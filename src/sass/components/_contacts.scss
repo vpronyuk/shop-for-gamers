@@ -1,3 +1,7 @@
+.contacts-container {
+  overflow: hidden;
+}
+
 .contacts {
   background-image: url(../images/contacts/bg-mob-1x.jpg);
   padding-top: 40px;
@@ -7,53 +11,135 @@
   background-position: center;
   background-size: cover;
 
-  @include retina() {
-    background-image: url(../images/contacts/bg-mob-2x.jpg);
+  @media screen and (max-width: 767px) {
+    background-position-y: 110px;
   }
 
-  @include tablet() {
+  @include tablet {
+    padding: 120px 0;
     background-image: url(../images/contacts/bg-tab-1x.jpg);
-    @include retina() {
+
+    @include retina {
       background-image: url(../images/contacts/bg-tab-2x.jpg);
     }
   }
 
-  @include desktop() {
-    background-image: url(../images/contacts/bg-1x.jpg);
-    @include retina() {
-      background-image: url(../images/contacts/bg-2x.jpg);
+  @include desktop {
+    background-image: url(../images/contacts/bg-desktop-1x.jpg);
+    background-position-y: -130px;
+
+    @include retina {
+      background-image: url(../images/contacts/bg-desktop-2x.jpg);
     }
   }
-
-  @include tablet() {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
 }
+//   @include retina {
+//     background-image: url(../images/contacts/bg-mob-2x.jpg);
+//   }
 
-.contacts-container {
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
-  margin-bottom: 35px;
-}
+//   @include tablet {
+//     background-image: url(../images/contacts/bg-tab-1x.jpg);
+//     @include retina {
+//       background-image: url(../images/contacts/bg-tab-2x.jpg);
+//     }
+//   }
+
+//   @include desktop {
+//     background-image: url(../images/contacts/bg-desktop-1x.jpg);
+//     @include retina {
+//       background-image: url(../images/contacts/bg-desktop-2x.jpg);
+//     }
+//   }
+
+//   @include tablet {
+//     padding-top: 120px;
+//     padding-bottom: 120px;
+//   }
+// }
 
 .contacts-title {
+  position: relative;
   margin-bottom: 35px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
-
   color: #ffffff;
 
-  @include tablet() {
+  &::before {
+    content: ' ';
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    width: 480px;
+    height: 30px;
+    top: 20px;
+    left: -16px;
+    background-image: url(../images/contacts/title-top-line-mob.png);
+
+    @media screen and (max-width: $mobile) {
+      width: 100vw;
+    }
+
+    @include tablet {
+      width: 1280px;
+      height: 30px;
+      left: -100px;
+      top: 65px;
+      background-image: url(../images/contacts/title-top-line.png);
+    }
+
+    @include desktop {
+      width: 1280px;
+      height: 30px;
+      top: 70px;
+      left: -142px;
+      background-image: url(../images/contacts/title-top-line.png);
+    }
+  }
+
+  &::after {
+    content: ' ';
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    width: 480px;
+    height: 30px;
+    top: 24px;
+    left: -16px;
+    background-image: url(../images/contacts/title-bottom-line-mob.png);
+
+    @media screen and (max-width: $mobile) {
+      width: 100vw;
+    }
+
+    @include tablet {
+      width: 1280px;
+      height: 30px;
+      left: -100px;
+      top: 73px;
+      background-image: url(../images/contacts/title-bottom-line.png);
+    }
+
+    @include desktop {
+      width: 1280px;
+      height: 30px;
+      top: 78px;
+      left: -142px;
+      background-image: url(../images/contacts/title-bottom-line.png);
+    }
+  }
+
+  @include tablet {
+    margin-left: 59px;
+    margin-bottom: 67px;
     font-size: 56px;
     line-height: 1.17;
   }
 
-  @include desktop() {
+  @include desktop {
+    margin-left: 102px;
     margin-bottom: 75px;
   }
 }
@@ -187,9 +273,13 @@
 
   color: #86e543;
 
-  @include tablet() {
+  @include tablet {
     font-size: 36px;
     line-height: 1.16;
+  }
+
+  @include desktop {
+    margin-bottom: 40px;
   }
 }
 
@@ -204,6 +294,9 @@
   width: 100%;
   min-height: 24px;
   background-color: transparent;
+  color: var(--white-color-text);
+  font-size: 18px;
+  line-height: 1.11;
   border: transparent;
   border-bottom: 1px solid #86e543;
   &:focus {
@@ -247,11 +340,15 @@
 
 textarea {
   margin-top: 4px;
-
+  padding: 5px;
   resize: none;
   min-height: 95px;
   width: 100%;
   background-color: transparent;
+  color: var(--white-color-text);
+  font-size: 18px;
+  line-height: 1.11;
+
   border: 1px solid #86e543;
 
   @include tablet() {
@@ -278,7 +375,7 @@ textarea {
 }
 
 .img {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 479px) {
     width: 100vw;
     margin-left: -15px;
   }
