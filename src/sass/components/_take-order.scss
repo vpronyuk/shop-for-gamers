@@ -31,6 +31,7 @@
     @include tablet {
         font-size: 56px;
         margin-bottom: 51px;
+        margin-left: 59px;
     }
 
     @include desktop {
@@ -38,56 +39,55 @@
     }
 }
 
-.take-order__title::before {
-    content: "";
+.take-order__title:before {
     position: absolute;
-    left: -17px;
-    right: -18px;
-    bottom: -35px;
+    content: "";
+    left: -16px;
+    right: -16px;
     top: 25px;
-    height: 20px;
+    height: 72px;
     background-image: url(/src/images/take-order/icon-line-mobile-1.png);
     background-repeat: no-repeat;
     background-size: contain;
 
     @include tablet {
-    left: -40px;
+    left: -100px;
     right: -40px;
-    top: 55px;
-    bottom: -35px;
-    height: 40px;
+    top: 35px;
+    height: 72px;
     background-image: url(/src/images/take-order/icon-line-tablet-1.png);
     }
 
     @include desktop {
+    height: 72px;
+    top: 55px;
     background-image: url(/src/images/take-order/icon-line-desktop-1.png);
-    right: -41px;
+    right: -40px;
 }
 }
 
 .take-order__title::after {
-    content: "";
     position: absolute;
-    left: -17px;
-    right: -18px;
-    bottom: -43px;
+    content: "";
+    left: -16px;
+    right: -16px;
     top: 30px;
-    height: 20px;
+    height: 72px;
     background-image: url(/src/images/take-order/icon-line-mobile-2.png);
     background-repeat: no-repeat;
     background-size: contain;
 
     @include tablet {
-    left: -40px;
+    left: -100px;
     right: -40px;
-    bottom: -35px;
-    top: 63px;
-    height: 40px;
+    top: 43px;
+    height: 72px;
     background-image: url(/src/images/take-order/icon-line-tablet-2.png);
     }
 
     @include desktop {
-    right: -41px;
+    top: 63px;
+    right: -40px;
     background-image: url(/src/images/take-order/icon-line-desktop-2.png);
     }
 }
