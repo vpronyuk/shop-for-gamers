@@ -88,52 +88,52 @@
 .sale-title::before {
   content: '';
   position: absolute;
-  left: -96px;
+  left: -81px;
   right: -16px;
   top: 25px;
   height: 40px;
-  background-image: url(../images/accessories/icon-line-mobile-1.png);
+  background-image: url(../images/sale-section/line-mobile-1.png);
   background-repeat: no-repeat;
   background-size: contain;
 
   @include tablet {
     left: -142px;
     right: -40px;
-    top: 55px;
-    background-image: url(../images/accessories/icon-line-tablet-1.png);
+    top: 45px;
+    height: 72px;
+    background-image: url(../images/sale-section/line-tablet-1.png);
   }
 
   @include desktop {
-    top: 43px;
+    top: 40px;
     left: -182px;
-    height: 60px;
-    background-image: url(../images/accessories/icon-line-desktop-1.png);
+    background-image: url(../images/sale-section/line-desktop-1.png);
   }
 }
 
 .sale-title::after {
   content: '';
   position: absolute;
-  left: -96px;
+  left: -81px;
   right: -16px;
   top: 32px;
   height: 40px;
-  background-image: url(../images/accessories/icon-line-mobile-2.png);
+  background-image: url(../images/sale-section/line-mobile-2.png);
   background-repeat: no-repeat;
   background-size: contain;
 
   @include tablet {
     left: -142px;
     right: -40px;
-    bottom: -35px;
-    top: 63px;
-    background-image: url(../images/accessories/icon-line-tablet-2.png);
+    top: 53px;
+    height: 72px;
+    background-image: url(../images/sale-section/line-tablet-2.png);
   }
 
   @include desktop {
-    top: 55px;
+    top: 48px;
     left: -182px;
-    background-image: url(../images/accessories/icon-line-desktop-2.png);
+    background-image: url(../images/sale-section/line-desktop-2.png);
   }
 }
 
