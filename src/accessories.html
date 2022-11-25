@@ -23,22 +23,50 @@
         <div class="container">
           <ul class="accessories-filter">
             <li>
-              <button class="filter-btn btn" type="button">All</button>
+              <button
+                class="filter-btn btn"
+                data-filter="*"
+                onclick="filterCards(event)"
+                type="button"
+              >
+                All
+              </button>
             </li>
             <li>
-              <button class="filter-btn btn" type="button">Headsets</button>
+              <button
+                class="filter-btn btn"
+                data-filter="headsets"
+                onclick="filterCards(event)"
+                type="button"
+              >
+                Headsets
+              </button>
             </li>
             <li>
-              <button class="filter-btn btn" type="button">Keyboards</button>
+              <button
+                class="filter-btn btn"
+                data-filter="keyboards"
+                onclick="filterCards(event)"
+                type="button"
+              >
+                Keyboards
+              </button>
             </li>
             <li>
-              <button class="filter-btn btn" type="button">Mouses</button>
+              <button
+                class="filter-btn btn"
+                data-filter="mouses"
+                onclick="filterCards(event)"
+                type="button"
+              >
+                Mouses
+              </button>
             </li>
           </ul>
           <h1 class="accessories-title">All accessories</h1>
 
           <ul class="accessories-list">
-            <li class="accessories-item accessories-item__first">
+            <li class="accessories-item accessories-item__first headsets">
               <a class="accessories-link" href="./take-order.html">
                 <div class="accessories-thumb">
                   <picture>
@@ -82,7 +110,7 @@
               </a>
             </li>
 
-            <li class="accessories-item accessories-item__first">
+            <li class="accessories-item accessories-item__first headsets">
               <a class="accessories-link" href="./take-order.html">
                 <div class="accessories-thumb">
                   <picture>
@@ -128,7 +156,7 @@
               </a>
             </li>
 
-            <li class="accessories-item accessories-item__second">
+            <li class="accessories-item accessories-item__second headsets">
               <a class="accessories-link" href="./take-order.html">
                 <div class="accessories-thumb">
                   <picture>
@@ -172,7 +200,7 @@
               </a>
             </li>
 
-            <li class="accessories-item accessories-item__second">
+            <li class="accessories-item accessories-item__second keyboards">
               <a class="accessories-link" href="./take-order.html">
                 <div class="accessories-thumb">
                   <picture>
@@ -218,7 +246,7 @@
               </a>
             </li>
 
-            <li class="accessories-item accessories-item__third">
+            <li class="accessories-item accessories-item__third keyboards">
               <a class="accessories-link" href="./take-order.html">
                 <div class="accessories-thumb">
                   <picture>
@@ -264,7 +292,7 @@
               </a>
             </li>
 
-            <li class="accessories-item accessories-item__third">
+            <li class="accessories-item accessories-item__third headsets">
               <a class="accessories-link" href="./take-order.html">
                 <div class="accessories-thumb">
                   <picture>
@@ -310,7 +338,7 @@
               </a>
             </li>
 
-            <li class="accessories-item accessories-item__fourth">
+            <li class="accessories-item accessories-item__fourth mouses">
               <a class="accessories-link" href="./take-order.html">
                 <div class="accessories-thumb">
                   <picture>
@@ -354,7 +382,7 @@
               </a>
             </li>
 
-            <li class="accessories-item accessories-item__fourth">
+            <li class="accessories-item accessories-item__fourth mouses">
               <a class="accessories-link" href="./take-order.html">
                 <div class="accessories-thumb">
                   <picture>
@@ -400,7 +428,7 @@
               </a>
             </li>
 
-            <li class="accessories-item accessories-item__first">
+            <li class="accessories-item accessories-item__first mouses">
               <a class="accessories-link" href="./take-order.html">
                 <div class="accessories-thumb">
                   <picture>
@@ -446,7 +474,7 @@
               </a>
             </li>
 
-            <li class="accessories-item accessories-item__first">
+            <li class="accessories-item accessories-item__first keyboards">
               <a class="accessories-link" href="./take-order.html">
                 <div class="accessories-thumb">
                   <picture>
@@ -492,7 +520,7 @@
               </a>
             </li>
 
-            <li class="accessories-item accessories-item__second">
+            <li class="accessories-item accessories-item__second mouses">
               <a class="accessories-link" href="./take-order.html">
                 <div class="accessories-thumb">
                   <picture>
@@ -538,7 +566,7 @@
               </a>
             </li>
 
-            <li class="accessories-item accessories-item__second">
+            <li class="accessories-item accessories-item__second keyboards">
               <a class="accessories-link" href="./take-order.html">
                 <div class="accessories-thumb">
                   <picture>
@@ -584,7 +612,7 @@
               </a>
             </li>
 
-            <li class="accessories-item accessories-item__third">
+            <li class="accessories-item accessories-item__third headsets">
               <a class="accessories-link" href="./take-order.html">
                 <div class="accessories-thumb">
                   <picture>
@@ -630,7 +658,7 @@
               </a>
             </li>
 
-            <li class="accessories-item accessories-item__third">
+            <li class="accessories-item accessories-item__third headsets">
               <a class="accessories-link" href="./take-order.html">
                 <div class="accessories-thumb">
                   <picture>
@@ -676,7 +704,7 @@
               </a>
             </li>
 
-            <li class="accessories-item accessories-item__fourth">
+            <li class="accessories-item accessories-item__fourth headsets">
               <a class="accessories-link" href="./take-order.html">
                 <div class="accessories-thumb">
                   <picture>
@@ -722,7 +750,7 @@
               </a>
             </li>
 
-            <li class="accessories-item accessories-item__fourth">
+            <li class="accessories-item accessories-item__fourth keyboards">
               <a class="accessories-link" href="./take-order.html">
                 <div class="accessories-thumb">
                   <picture>
@@ -768,11 +796,19 @@
               </a>
             </li>
           </ul>
+          <div class="accessories-slider">
+            <ul class="accessories-slider">
+              <li class="accessories-dots oval"></li>
+              <li class="accessories-dots"></li>
+              <li class="accessories-dots"></li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
     <footer>
       <include src="./partials/footer.html"></include>
     </footer>
+    <script src="./js/filter.js"></script>
   </body>
 </html>
