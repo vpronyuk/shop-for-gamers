@@ -1,5 +1,15 @@
-.mySwiper {
-  cursor: pointer;
+.gallery {
+  padding-top: 120px;
+  background-image: url(../images/slider/gallery-bg.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  @include retina {
+    background-image: url(../images/slider/gallery-bg-2x.png);
+  }
+  @media screen and (max-width: 767px) {
+    padding-top: 0;
+  }
 }
 
 .swiper-pagination {

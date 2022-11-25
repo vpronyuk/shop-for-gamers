@@ -1,39 +1,43 @@
 .hero {
   background-image: url(../images/hero/hero-mob.png);
+  background-position-y: -104px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   max-width: 480px;
-  height: 601px;
+  height: 497px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 180px;
   @include retina {
     background-image: url(../images/hero/hero-mob-2x.png);
+    background-position-y: -104px;
   }
   @include tablet {
     background-image: url(../images/hero/hero-tab.png);
-    background-position-y: -134px;
+    background-position-y: -136px;
     min-width: 768px;
-    height: 860px;
+    height: 724px;
     padding-left: 40px;
     padding-top: 154px;
     @include retina {
       background-image: url(../images/hero/hero-tab-2x.png);
+      background-position-y: -136px;
     }
   }
   @include desktop {
-    background-image: url(../images/hero/hero.png);
+    background-image: url(../images/hero/hero-bgr.png);
+    background-position-y: -136px;
+    opacity: 0.8;
     min-width: 1280px;
     position: relative;
     left: 0;
     top: 0;
     padding-top: 180px;
-    padding-bottom: 208px;
     padding-left: 8px;
 
     @include retina {
-      background-image: url(../images/hero/hero-2x.png);
+      background-image: url(../images/hero/hero-bgr-2x.png);
     }
   }
 }
