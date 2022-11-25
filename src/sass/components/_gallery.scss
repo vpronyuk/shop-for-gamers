@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+  cursor: pointer;
   @include retina {
     background-image: url(../images/slider/gallery-bg-2x.png);
   }

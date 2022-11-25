@@ -4,18 +4,43 @@
   min-width: 320px;
   padding-top: 40px;
   padding-bottom: 48px;
-  background-color: #01383a;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url(../images/accessories/bg-mob.jpg);
+
+  @include retina {
+    & {
+      background-image: url(../images/accessories/bg-mob-2x.jpg);
+    }
+  }
 
   @include tablet {
     padding-top: 120px;
     padding-bottom: 120px;
-    background-color: #01383a;
+    background-image: url(../images/accessories/bg-tab.jpg);
+
+    @include retina {
+      background-image: url(../images/accessories/bg-tab-2x.jpg);
+    }
   }
 
   @include desktop {
-    background-color: #01383a;
+    background-image: url(../images/accessories/bg-desktop.jpg);
+
+    @include retina {
+      background-image: url(../images/accessories/bg-desktop-2x.jpg);
+    }
   }
 }
+
+// @media screen and (min-device-pixel-ratio: 2),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+//   .accessories {
+//     background-image: url(../images/accessories/bg-mob-2x.jpg);
+//   }
+// }
 
 .accessories-filter {
   display: flex;
