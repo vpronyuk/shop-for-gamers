@@ -128,6 +128,13 @@
   }
 }
 
+.btn-pushed {
+  background-color: var(--light-green-color);
+  color: var(--dark-green-color);
+  box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1),
+    0px 4px 20px rgba(134, 229, 67, 0.4);
+}
+
 .addcard-btn {
   min-width: 173px;
   height: 51px;

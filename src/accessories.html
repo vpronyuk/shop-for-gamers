@@ -21,13 +21,14 @@
     <main>
       <section class="accessories">
         <div class="container">
-          <ul class="accessories-filter">
+          <ul class="accessories-filter" id="filter-btns">
             <li>
               <button
-                class="filter-btn btn"
+                class="filter-btn btn btn-pushed"
                 data-filter="*"
                 onclick="filterCards(event)"
                 type="button"
+                data-filter
               >
                 All
               </button>
@@ -38,6 +39,7 @@
                 data-filter="headsets"
                 onclick="filterCards(event)"
                 type="button"
+                data-filter
               >
                 Headsets
               </button>
@@ -48,6 +50,7 @@
                 data-filter="keyboards"
                 onclick="filterCards(event)"
                 type="button"
+                data-filter
               >
                 Keyboards
               </button>
@@ -58,6 +61,7 @@
                 data-filter="mouses"
                 onclick="filterCards(event)"
                 type="button"
+                data-filter
               >
                 Mouses
               </button>

@@ -257,60 +257,69 @@
   margin-left: auto;
   margin-right: auto;
   flex-direction: row;
-  
-  @include tablet  {
+
+  @include tablet {
     margin-top: 32px;
   }
 }
 
-  .accessories-slider {
+.accessories-slider {
   height: 16px;
   width: 104px;
   position: relative;
-  }
-  
+}
 
-  .accessories-dots {
+.accessories-dots {
   background-color: var(--white-color-text);
   width: 16px;
   height: 16px;
-  border-radius:50%;
+  border-radius: 50%;
   border: 1px solid var(--white-color-text);
 
-    margin-left: 16px;
-    animation: move 700ms linear 0ms infinite;
-    margin-right: 30px;
-    
-    &:first-child{
-      position: absolute;
-      top: 0;
-      left: 0;
-      animation: grow 700ms linear 0ms infinite;
-    }
-    
-    &:last-child{
-      position: absolute;
-      top: 0;
-      right: 0;
-      margin-right: 0;
-      animation: grow 700ms linear 0s infinite reverse;
-    }
+  margin-left: 16px;
+  animation: move 700ms linear 0ms infinite;
+  margin-right: 30px;
+
+  &:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: grow 700ms linear 0ms infinite;
   }
 
-  .oval {
-    background-color: var(--white-color-text);
-    width: 40px;
-    height: 16px;
-    border-radius: 30%;
-    border: 1px solid var(--white-color-text);
+  &:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 0;
+    animation: grow 700ms linear 0s infinite reverse;
   }
+}
 
-  @keyframes grow {
-    from {transform: scale(0, 0); opacity: 0;}
-    to {transform: scale(1, 1); opacity: 1;}
+.oval {
+  background-color: var(--white-color-text);
+  width: 40px;
+  height: 16px;
+  border-radius: 30%;
+  border: 1px solid var(--white-color-text);
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0, 0);
+    opacity: 0;
   }
-  
-  @keyframes move {
-    from {transform: translateX(0px)}
-    to {transform: translateX(45px)}
+  to {
+    transform: scale(1, 1);
+    opacity: 1;
   }
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(45px);
+  }
+}
