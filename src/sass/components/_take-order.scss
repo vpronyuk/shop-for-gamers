@@ -1,21 +1,41 @@
 .take-order {
-  background-color: #01383a;
   margin-left: auto;
   margin-right: auto;
   min-width: 320px;
   padding-top: 40px;
   padding-bottom: 48px;
-  max-width: $mobile;
+  // max-width: $mobile;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(../images/take-order/bg-mob.jpg);
+
+  @include retina {
+    & {
+      background-image: url(../images/take-order/bg-mob-2x.jpg);
+    }
+  }
 
   @include tablet {
-    max-width: $tablet;
+    // max-width: $tablet;
     padding-top: 120px;
     padding-bottom: 120px;
     margin-left: auto;
     margin-right: auto;
+    background-image: url(../images/take-order/bg-tablet.jpg);
+
+    @include retina {
+      background-image: url(../images/take-order/bg-tablet-2x.jpg);
+    }
   }
+
   @include desktop {
-    max-width: 100%;
+    // max-width: 1280px;
+    background-image: url(../images/take-order/bg-desktop.jpg);
+
+    @include retina {
+      background-image: url(../images/take-order/bg-desktop-2x.jpg);
+    }
   }
 }
 
