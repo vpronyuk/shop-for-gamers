@@ -11,6 +11,7 @@ body {
       cursor: pointer;
       width: 44px;
       height: 44px;
+      z-index: 100;
     }
 
     .btn-up::before {
