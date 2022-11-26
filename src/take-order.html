@@ -264,25 +264,32 @@
                       />
                     </li>
                     <li class="take-order__field">
-                      <input
+                      <!-- <input
                         class="take-order__input"
                         list="browsers"
                         name="color"
                         id="color"
                         placeholder="Color Option"
-                      />
-
-                      <datalist class="take-order__browsers" id="browsers">
-                        <option class="browsers-option">
-                          K9D Black Orange
-                        </option>
-                        <option class="browsers-option">K9D Silver Gray</option>
-                        <option class="browsers-option">K9U White Blue</option>
-                      </datalist>
+                      /> -->
+                      <div class="select-wrapper">
+                        <select class="select-list" id="browsers">
+                          <option selected disabled>Color option</option>
+                          <option class="browsers-option">
+                            K9D Black Orange
+                          </option>
+                          <option class="browsers-option">
+                            K9D Silver Gray
+                          </option>
+                          <option class="browsers-option">
+                            K9U White Blue
+                          </option>
+                        </select>
+                      </div>
                     </li>
                     <li class="take-order__field">
                       <input
                         class="take-order__input"
+                        type="number"
                         list="browsers2"
                         name="quantityname"
                         id="quantity"
@@ -300,6 +307,8 @@
                         placeholder="Payment"
                       />
                       <datalist class="take-order__browsers" id="browsers3">
+                        <option class="browsers-option">Cash</option>
+                        <option class="browsers-option">Credit card</option>
                       </datalist>
                     </li>
                   </ul>
