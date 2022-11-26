@@ -56,6 +56,7 @@
 
   @include desktop {
     margin-bottom: 75px;
+    margin-left: 102px;
   }
 }
 
@@ -81,6 +82,7 @@
   @include desktop {
     height: 72px;
     top: 55px;
+    left: -143px;
     background-image: url(/src/images/take-order/icon-line-desktop-1.png);
     right: -40px;
   }
@@ -106,6 +108,7 @@
   }
 
   @include desktop {
+    left: -143px;
     top: 63px;
     right: -40px;
     background-image: url(/src/images/take-order/icon-line-desktop-2.png);
@@ -360,4 +363,34 @@
     flex-direction: row;
     justify-content: center;
   }
+}
+
+.select-wrapper {
+  position: relative;
+  &::before {
+    position: absolute;
+    bottom: 6px;
+    right: 0;
+    content: '';
+    background-image: url(/src/images/take-order/ddown.png);
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 13px;
+    pointer-events: none;
+  }
+}
+
+.select-list {
+  background-color: transparent;
+  color: var(--white-color-text);
+  border: none;
+  border-bottom: 1px solid var(--light-green-color);
+  width: 100%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.select-option {
+  background: #01383a;
 }

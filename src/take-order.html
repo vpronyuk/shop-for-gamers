@@ -264,43 +264,64 @@
                       />
                     </li>
                     <li class="take-order__field">
-                      <input
+                      <!-- <input
                         class="take-order__input"
                         list="browsers"
                         name="color"
                         id="color"
                         placeholder="Color Option"
-                      />
-
-                      <datalist class="take-order__browsers" id="browsers">
-                        <option class="browsers-option">
-                          K9D Black Orange
-                        </option>
-                        <option class="browsers-option">K9D Silver Gray</option>
-                        <option class="browsers-option">K9U White Blue</option>
-                      </datalist>
+                      /> -->
+                      <div class="select-wrapper">
+                        <select class="select-list" id="browsers">
+                          <option selected disabled hidden>Color option</option>
+                          <option class="select-option">
+                            K9D Black Orange
+                          </option>
+                          <option class="select-option">K9D Silver Gray</option>
+                          <option class="select-option">K9U White Blue</option>
+                        </select>
+                      </div>
                     </li>
                     <li class="take-order__field">
-                      <input
+                      <!-- <input
                         class="take-order__input"
+                        type="number"
                         list="browsers2"
                         name="quantityname"
                         id="quantity"
                         placeholder="Quantity"
-                      />
-                      <datalist class="take-order__browsers" id="browsers2">
-                      </datalist>
+                      /> -->
+                      <div class="select-wrapper">
+                        <select class="select-list" id="browsers2">
+                          <option selected disabled hidden>Quantity</option>
+                          <option class="select-option">1</option>
+                          <option class="select-option">2</option>
+                          <option class="select-option">3</option>
+                          <option class="select-option">4</option>
+                          <option class="select-option">5</option>
+                          <option class="select-option">6</option>
+                          <option class="select-option">7</option>
+                          <option class="select-option">8</option>
+                          <option class="select-option">9</option>
+                          <option class="select-option">10</option>
+                        </select>
+                      </div>
                     </li>
                     <li class="take-order__field">
-                      <input
+                      <!-- <input
                         class="take-order__input"
                         list="browsers3"
                         name="payment"
                         id="paymentname"
                         placeholder="Payment"
-                      />
-                      <datalist class="take-order__browsers" id="browsers3">
-                      </datalist>
+                      /> -->
+                      <div class="select-wrapper">
+                        <select class="select-list" id="browsers3">
+                          <option selected disabled hidden>Payment</option>
+                          <option class="select-option">Cash</option>
+                          <option class="select-option">Credit card</option>
+                        </select>
+                      </div>
                     </li>
                   </ul>
                 </div>
