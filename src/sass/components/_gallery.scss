@@ -1,10 +1,17 @@
+main {
+  background-image: url(../images/slider/bg-mob.jpg);
+  background-position-y: 497px;
+  z-index: 100;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .gallery {
-  padding-top: 120px;
-  background-image: url(../images/slider/gallery-bg.png);
+  padding-bottom: 68px;
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  cursor: pointer;
+  z-index: 5;
   @include retina {
     background-image: url(../images/slider/gallery-bg-2x.png);
   }
@@ -16,7 +23,7 @@
 .swiper-pagination {
   position: relative;
   top: 24px;
-  margin-bottom: 48px;
+  // margin-bottom: 48px;
   @include tablet {
     margin-bottom: 120px;
   }

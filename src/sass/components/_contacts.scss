@@ -3,21 +3,16 @@
 }
 
 .contacts {
-  background-image: url(../images/contacts/bg-mob-1x.jpg);
   padding-top: 40px;
   padding-bottom: 48px;
 
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-
-  @media screen and (max-width: 767px) {
-    background-position-y: 110px;
-  }
+  background-size: contain;
 
   @include tablet {
     padding: 120px 0;
-    background-image: url(../images/contacts/bg-tab-1x.jpg);
+    background-image: url(../images/contacts/bg-tab.jpg);
 
     @include retina {
       background-image: url(../images/contacts/bg-tab-2x.jpg);
@@ -25,8 +20,7 @@
   }
 
   @include desktop {
-    background-image: url(../images/contacts/bg-desktop-1x.jpg);
-    background-position-y: -130px;
+    background-image: url(../images/contacts/bg-desktop.jpg);
 
     @include retina {
       background-image: url(../images/contacts/bg-desktop-2x.jpg);
