@@ -5,9 +5,17 @@
   min-width: 320px;
   max-width: $mobile;
 
-  @include tablet {
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
     max-width: $tablet;
     padding-bottom: 120px;
+    background-image: url(../images/sale-section/bg-tab.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+
+    @include retina {
+      background-image: url(../images/sale-section/bg-tab-2x.jpg);
+    }
   }
   @include desktop {
     max-width: $desktop;

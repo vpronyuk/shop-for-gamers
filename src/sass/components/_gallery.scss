@@ -1,9 +1,21 @@
-main {
-  background-image: url(../images/slider/bg-mob.jpg);
-  background-position-y: 497px;
-  z-index: 100;
+.index-wrapper {
+  margin: 0 auto;
   background-size: contain;
   background-repeat: no-repeat;
+  background-size: contain;
+
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/slider/bg-mob.jpg);
+  }
+
+  @include desktop {
+    width: $desktop;
+    background-image: url(../images/slider/bg-desktop.jpg);
+
+    @include retina {
+      background-image: url(../images/slider/bg-desktop-2x.jpg);
+    }
+  }
 }
 
 .gallery {
@@ -12,8 +24,13 @@ main {
   background-position: top;
   background-size: cover;
   z-index: 5;
-  @include retina {
-    background-image: url(../images/slider/gallery-bg-2x.png);
+
+  @include tablet {
+    padding-top: 120px;
+    padding-bottom: 147px;
+  }
+  @include desktop {
+    padding-bottom: 121px;
   }
   @media screen and (max-width: 767px) {
     padding-top: 0;
@@ -23,14 +40,8 @@ main {
 .swiper-pagination {
   position: relative;
   top: 24px;
-  // margin-bottom: 48px;
-  @include tablet {
-    margin-bottom: 120px;
-  }
-  @include desktop {
-    margin-bottom: 120px;
-  }
 }
+
 .swiper-pagination-bullet {
   width: 16px;
   height: 16px;
