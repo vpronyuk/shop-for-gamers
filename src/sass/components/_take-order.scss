@@ -345,20 +345,16 @@
 .select-wrapper {
   position: relative;
   &::before {
-    content: '';
     position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    background-image: url(/src/images/take-order/drop-down.svg);
+    bottom: 6px;
+    right: 0;
+    content: '';
+    background-image: url(/src/images/take-order/ddown.png);
     background-repeat: no-repeat;
+    width: 18px;
+    height: 13px;
+    pointer-events: none;
   }
-}
-
-.take-order__browsers {
-}
-
-.take-order__browsers::before {
 }
 
 .select-list {
@@ -372,10 +368,6 @@
   appearance: none;
 }
 
-.browsers-option {
-  background-color: #01383a;
-
-  &:hover {
-    background-color: yellow;
-  }
+.select-option {
+  background: #01383a;
 }
