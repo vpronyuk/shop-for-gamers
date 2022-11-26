@@ -5,14 +5,23 @@ body {
     .btn-up {
       position: fixed;
       background-color: var(--grey-color);
-      right: 40px;
-      bottom: 40px;
+      right: 10px;
+      bottom: 10px;
       border-radius: 22px;
       cursor: pointer;
       width: 44px;
       height: 44px;
       transition: background-color 250ms linear;
       z-index: 100;
+
+      @include tablet {
+        right: 40px;
+        bottom: 40px;
+      }
+      @include desktop {
+        right: 70px;
+        bottom: 70px;
+      }
     }
 
     .btn-up::before {
