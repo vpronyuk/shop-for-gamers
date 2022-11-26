@@ -42,3 +42,27 @@ for (let i = 0; i < selectSingleQuantity_labels.length; i++) {
     selectSingleQuantity.setAttribute('data-state', '');
   });
 }
+
+// Для Payment
+
+const selectSinglePayment = document.querySelector('.payment');
+const selectSinglePayment_title = selectSinglePayment.querySelector('.payment-select__title');
+const selectSinglePayment_labels = selectSinglePayment.querySelectorAll('.payment-select__label');
+
+
+// Toggle menu
+selectSinglePayment_title.addEventListener('click', () => {
+  if ('active' === selectSinglePayment.getAttribute('data-state')) {
+    selectSinglePayment.setAttribute('data-state', '');
+  } else {
+    selectSinglePayment.setAttribute('data-state', 'active');
+  }
+});
+
+// Close when click to option
+for (let i = 0; i < selectSingleQuantity_labels.length; i++) {
+  selectSinglePayment_labels[i].addEventListener('click', (evt) => {
+    selectSinglePayment_title.textContent = evt.target.textContent;
+    selectSinglePayment.setAttribute('data-state', '');
+  });
+}
