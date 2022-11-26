@@ -245,7 +245,6 @@
                 <div class="take-input__desktop">
                   <ul>
                     <li class="take-order__field">
-                      <!-- <label class="take-order__label" for="name"></label> -->
                       <input
                         class="take-order__input"
                         type="text"
@@ -263,64 +262,212 @@
                         placeholder="Email"
                       />
                     </li>
+
                     <li class="take-order__field">
-                      <!-- <input
-                        class="take-order__input"
-                        list="browsers"
-                        name="color"
-                        id="color"
-                        placeholder="Color Option"
-                      /> -->
-                      <div class="select-wrapper">
-                        <select class="select-list" id="browsers">
-                          <option selected disabled hidden>Color option</option>
-                          <option class="select-option">
-                            K9D Black Orange
-                          </option>
-                          <option class="select-option">K9D Silver Gray</option>
-                          <option class="select-option">K9U White Blue</option>
-                        </select>
+                      <div class="select" data-state="">
+                        <div class="select__title" data-default="colorOption 0">
+                          Color option
+                        </div>
+                        <div class="select__content">
+                          <input
+                            id="colorSelect0"
+                            class="select__input"
+                            type="radio"
+                            name="colorSelect"
+                            checked
+                          />
+                          <label for="colorSelect0" class="select__label"
+                            >Color option</label
+                          >
+                          <input
+                            id="colorSelect1"
+                            class="select__input"
+                            type="radio"
+                            name="colorSelect"
+                          />
+                          <label for="colorSelect1" class="select__label"
+                            >K9D Black Orange</label
+                          >
+                          <input
+                            id="colorSelect2"
+                            class="select__input"
+                            type="radio"
+                            name="colorSelect"
+                          />
+                          <label for="colorSelect2" class="select__label"
+                            >K9D Silver Gray</label
+                          >
+                          <input
+                            id="colorSelect3"
+                            class="select__input"
+                            type="radio"
+                            name="colorSelect"
+                          />
+                          <label for="colorSelect3" class="select__label"
+                            >K9U White Blue</label
+                          >
+                        </div>
                       </div>
                     </li>
+                    <!--  QUANTITY -->
                     <li class="take-order__field">
-                      <!-- <input
-                        class="take-order__input"
-                        type="number"
-                        list="browsers2"
-                        name="quantityname"
-                        id="quantity"
-                        placeholder="Quantity"
-                      /> -->
-                      <div class="select-wrapper">
-                        <select class="select-list" id="browsers2">
-                          <option selected disabled hidden>Quantity</option>
-                          <option class="select-option">1</option>
-                          <option class="select-option">2</option>
-                          <option class="select-option">3</option>
-                          <option class="select-option">4</option>
-                          <option class="select-option">5</option>
-                          <option class="select-option">6</option>
-                          <option class="select-option">7</option>
-                          <option class="select-option">8</option>
-                          <option class="select-option">9</option>
-                          <option class="select-option">10</option>
-                        </select>
+                      <div class="quantity" data-state="">
+                        <div
+                          class="quantity-select__title"
+                          data-default="paymentSelect 0"
+                        >
+                          Quantity
+                        </div>
+                        <div class="quantity-select__content">
+                          <input
+                            id="paymentSelect0"
+                            class="quantity-select__input"
+                            type="radio"
+                            name="paymentSelect"
+                            checked
+                          />
+                          <label
+                            for="paymentSelect0"
+                            class="quantity-select__label"
+                            >Quantity</label
+                          >
+                          <input
+                            id="paymentSelect1"
+                            class="quantity-select__input"
+                            type="radio"
+                            name="paymentSelect"
+                          />
+                          <label
+                            for="paymentSelect1"
+                            class="quantity-select__label"
+                            >1</label
+                          >
+                          <input
+                            id="paymentSelect2"
+                            class="quantity-select__input"
+                            type="radio"
+                            name="paymentSelect"
+                          />
+                          <label
+                            for="paymentSelect2"
+                            class="quantity-select__label"
+                            >2</label
+                          >
+                          <input
+                            id="paymentSelect3"
+                            class="quantity-select__input"
+                            type="radio"
+                            name="paymentSelect"
+                          />
+                          <label
+                            for="paymentSelect3"
+                            class="quantity-select__label"
+                            >3</label
+                          >
+                          <input
+                            id="paymentSelect3"
+                            class="quantity-select__input"
+                            type="radio"
+                            name="paymentSelect"
+                          />
+                          <label
+                            for="paymentSelect3"
+                            class="quantity-select__label"
+                            >4</label
+                          >
+                          <input
+                            id="paymentSelect3"
+                            class="quantity-select__input"
+                            type="radio"
+                            name="paymentSelect"
+                          />
+                          <label
+                            for="paymentSelect3"
+                            class="quantity-select__label"
+                            >5</label
+                          >
+                          <input
+                            id="paymentSelect3"
+                            class="quantity-select__input"
+                            type="radio"
+                            name="paymentSelect"
+                          />
+                          <label
+                            for="paymentSelect3"
+                            class="quantity-select__label"
+                            >6</label
+                          >
+                          <input
+                            id="paymentSelect3"
+                            class="quantity-select__input"
+                            type="radio"
+                            name="paymentSelect"
+                          />
+                          <label
+                            for="paymentSelect3"
+                            class="quantity-select__label"
+                            >7</label
+                          >
+                          <input
+                            id="paymentSelect3"
+                            class="quantity-select__input"
+                            type="radio"
+                            name="paymentSelect"
+                          />
+                          <label
+                            for="paymentSelect3"
+                            class="quantity-select__label"
+                            >8</label
+                          >
+                        </div>
                       </div>
                     </li>
+                    
+                    <!-- Payment -->
                     <li class="take-order__field">
-                      <!-- <input
-                        class="take-order__input"
-                        list="browsers3"
-                        name="payment"
-                        id="paymentname"
-                        placeholder="Payment"
-                      /> -->
-                      <div class="select-wrapper">
-                        <select class="select-list" id="browsers3">
-                          <option selected disabled hidden>Payment</option>
-                          <option class="select-option">Cash</option>
-                          <option class="select-option">Credit card</option>
-                        </select>
+                      <div class="payment" data-state="">
+                        <div
+                          class="payment-select__title"
+                          data-default="paymentSelect 0"
+                        >
+                          Payment
+                        </div>
+                        <div class="payment-select__content">
+                          <input
+                            id="paymentSelect0"
+                            class="payment-select__input"
+                            type="radio"
+                            name="paymentSelect"
+                            checked
+                          />
+                          <label
+                            for="paymentSelect0"
+                            class="payment-select__label"
+                            >Payment</label
+                          >
+                          <input
+                            id="paymentSelect1"
+                            class="payment-select__input"
+                            type="radio"
+                            name="paymentSelect"
+                          />
+                          <label
+                            for="paymentSelect1"
+                            class="payment-select__label"
+                            >Cash</label
+                          >
+                          <input
+                            id="paymentSelect2"
+                            class="payment-select__input"
+                            type="radio"
+                            name="paymentSelect"
+                          />
+                          <label
+                            for="paymentSelect2"
+                            class="payment-select__label"
+                            >Credit card</label
+                          >
+                        </div>
                       </div>
                     </li>
                   </ul>
@@ -359,5 +506,6 @@
     <footer>
       <include src="./partials/footer.html"></include>
     </footer>
+    <script src="./js/drop-down.js"></script>
   </body>
 </html>
