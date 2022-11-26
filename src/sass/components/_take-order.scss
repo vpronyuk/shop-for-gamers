@@ -365,20 +365,20 @@
   }
 }
 
-.select-wrapper {
-  position: relative;
-  &::before {
-    position: absolute;
-    bottom: 6px;
-    right: 0;
-    content: '';
-    background-image: url(/src/images/take-order/ddown.png);
-    background-repeat: no-repeat;
-    width: 18px;
-    height: 13px;
-    pointer-events: none;
-  }
-}
+// .select-wrapper {
+//   position: relative;
+//   &::before {
+//     position: absolute;
+//     bottom: 6px;
+//     right: 0;
+//     content: '';
+//     background-image: url(/src/images/take-order/ddown.png);
+//     background-repeat: no-repeat;
+//     width: 18px;
+//     height: 13px;
+//     pointer-events: none;
+//   }
+// }
 
 .select-list {
   background-color: transparent;
@@ -389,8 +389,164 @@
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
+  select::-ms-expand { 
+      display: none; /* удалите стрелку по умолчанию в IE 10 и 11 */
+    }
+
 }
 
 .select-option {
-  background: #01383a;
+  background-color: #01383a; 
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.select-option:not(:last-child) {
+  @include desktop {
+  margin-bottom: 4px;
+  }
+}
+
+#browsers option {
+  width: 100px;
+}
+
+// Стилізація drop down
+
+
+.select {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+
+  &[data-state="active"] {
+    .select__title {
+      &::before {
+        transform: translate(-3px, -50%) rotate(-180deg);
+      }
+
+      &::after {
+        transform: translate(3px, -50%) rotate(-180deg);
+      }
+    }
+    .select__content {
+      opacity: 1;
+    }
+    
+    .select__label + .select__input + .select__label {
+      max-height: 40px;
+      border-top-width: 1px;
+    }
+  }
+}
+
+.quantity {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+
+  &[data-state="active"] {
+    .quantity-select__title {
+      &::before {
+        transform: translate(-3px, -50%) rotate(-180deg);
+      }
+
+      &::after {
+        transform: translate(3px, -50%) rotate(-180deg);
+      }
+    }
+    .quantity-select__content {
+      opacity: 1;
+    }
+    
+    .quantity-select__label + .quantity-select__input + .quantity-select__label {
+      max-height: 40px;
+      border-top-width: 1px;
+    }
+  }
+}
+
+.select__title,
+.quantity-select__title {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  padding: 1px 2px;
+  border-bottom: solid 1px var(--light-green-color);
+  cursor: pointer;
+  
+  &::before {
+    content: "";
+    width: 18px;
+    height: 13px;
+    position: absolute;
+    background-image: url(../images/take-order/ddown.svg);
+    background-repeat: no-repeat;
+    right: 0;
+    top: 0;
+  }
+  
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    transition: all 0.3s ease-out;
+
+  }
+  &::after {
+    transform: translate(3px, -50%) rotate(-45deg);
+  }
+  &:hover,
+  &:focus {
+    color: var(--light-green-color);
+  }
+}
+
+.select__content,
+.quantity-select__content {
+  position: absolute;
+  top: 34px;
+  left: 0px;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  background-color: #01383a;
+  transition: all 0.3s ease-out;
+  opacity: 0;
+  z-index: 8;
+}
+
+.select__input,
+.quantity-select__input {
+  display: none;
+
+  &:checked + label {
+    background-color: #01383a;
+  }
+  &:disabled + label {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+}
+
+.select__label,
+.quantity-select__label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 24px;
+  max-height: 0;
+  font-size: 16px;
+  line-height: 1.25;
+  padding-left: 1px;
+  
+  transition: all 0.25s ease-out;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:hover,
+  &:focus {
+    color: var(--light-green-color);
+  }
 }
