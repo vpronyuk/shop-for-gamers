@@ -56,6 +56,7 @@
 
   @include desktop {
     margin-bottom: 75px;
+    margin-left: 102px;
   }
 }
 
@@ -81,6 +82,7 @@
   @include desktop {
     height: 72px;
     top: 55px;
+    left: -143px;
     background-image: url(/src/images/take-order/icon-line-desktop-1.png);
     right: -40px;
   }
@@ -106,6 +108,7 @@
   }
 
   @include desktop {
+    left: -143px;
     top: 63px;
     right: -40px;
     background-image: url(/src/images/take-order/icon-line-desktop-2.png);
