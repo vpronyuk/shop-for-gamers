@@ -361,3 +361,33 @@
     justify-content: center;
   }
 }
+
+.select-wrapper {
+  position: relative;
+  &::before {
+    position: absolute;
+    bottom: 6px;
+    right: 0;
+    content: '';
+    background-image: url(/src/images/take-order/ddown.png);
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 13px;
+    pointer-events: none;
+  }
+}
+
+.select-list {
+  background-color: transparent;
+  color: var(--white-color-text);
+  border: none;
+  border-bottom: 1px solid var(--light-green-color);
+  width: 100%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.select-option {
+  background: #01383a;
+}
