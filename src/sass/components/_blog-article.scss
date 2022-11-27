@@ -197,6 +197,12 @@
   margin-left: 6px;
 }
 
+.list-wrap {
+  @include tablet {
+    margin-left: 9px;
+  }
+}
+
 .art-item {
 }
 
