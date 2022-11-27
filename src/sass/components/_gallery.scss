@@ -6,6 +6,10 @@
 
   @media screen and (max-width: 767px) {
     background-image: url(../images/slider/bg-mob.jpg);
+
+    @include retina {
+      background-image: url(../images/slider/bg-mob-2x.jpg);
+    }
   }
 
   @include desktop {
