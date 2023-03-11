@@ -2,14 +2,14 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://vyzhimov.github.io/project11-shopforgamers",
+  "homepage": "https://vpronyuk.github.io/shop-for-gamers",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /project11-shopforgamers/"
+    "build": "parcel build src/*.html --public-url /shop-for-gamers/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vyzhimov/project11-shopforgamers.git"
+    "url": "git+https://github.com/vpronyuk/shop-for-gamers.git"
   },
   "keywords": [],
   "author": "Alexander Vyzhimov <vizimov@gmail.com>",
